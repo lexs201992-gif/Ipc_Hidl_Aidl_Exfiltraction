@@ -1,0 +1,292 @@
+name: Android_Unisoc_IPC_Hidl_Aidl_Exfiltration
+description: |
+  Detecta la arquitectura IPC bidireccional HIDL↔AIDL de Unisoc/SPRD.
+  Se enfoca en los componentes que se cargan desde init o en el root kernel:
+  - Kernel modules: sprd_iq.ko, sprd_sipc (o variantes)
+  - Daemon SIPC: /vendor/bin/sprd_sipc
+  - Device nodes: /dev/unisoc_mailbox*
+  - AIDL descriptors: vendor.sprd.hardware.tool.IToolControl
+  - AIDL hash compartido: 1df77246035d6bdcb23dcafae03b6b272cb89fab
+  - SIPC strings: sipc-virt:core@5, chan-2/4/5
+  - Init scripts que cargan los módulos al boot
+
+author: "Alex de la cruz"
+parameters:
+  - name: YaraRule
+    type: yara
+    default: |
+      rule Android_Unisoc_IPC_Hidl_Aidl_Exfiltration {
+          meta:
+              severity = "Critical"
+              description = "Detects Unisoc bidirectional IPC architecture (HIDL<->AIDL) loaded from init/kernel"
+              reference = "https://github.com/lexs201992-gif/Ipc-Hidl-Aidl-Exfiltraction"
+              author = "Alex de la cruz"
+              date = "2026-09-27"
+
+          strings:
+              // === KERNEL MODULES (cargados desde init) ===
+              $ko_sprd_iq = "sprd_iq" ascii
+              $ko_sprd_sipc = "sprd_sipc" ascii
+              $ko_sipc_driver = "sipc_driver" ascii
+              $ko_unisoc_mailbox = "unisoc_mailbox" ascii
+              $ko_mailbox_driver = "mailbox_driver" ascii
+
+              // === DAEMON SIPC (init service) ===
+              $daemon_sprd_sipc = "sprd_sipc" ascii
+              $sipc_virt_core = "sipc-virt:core@5" ascii
+              $sipc_virt = "sipc-virt" ascii
+
+              // === SIPC CHANNELS (mailbox) ===
+              $chan2 = "chan-2" ascii
+              $chan4 = "chan-4" ascii
+              $chan5 = "chan-5" ascii
+              $mailbox_addr = "641c0000" ascii
+              $mailbox_dev = "unisoc_mailbox641c0000" ascii
+
+              // === AIDL DESCRIPTORS (IToolControl/IToolCallback) ===
+              $aidl_tool_control = "vendor.sprd.hardware.tool.IToolControl" ascii
+              $aidl_tool_callback = "vendor.sprd.hardware.tool.IToolCallback" ascii
+              $aidl_descriptor = "vendor$sprd$hardware$tool$IToolControl" ascii
+              $aidl_descriptor_cb = "vendor$sprd$hardware$tool$IToolCallback" ascii
+
+              // === AIDL HASH (compartido entre IToolControl y IToolCallback) ===
+              $aidl_hash = "1df77246035d6bdcb23dcafae03b6b272cb89fab" ascii
+
+              // === SERVICE NAMES ===
+              $svc_tool_control = "vendor.sprd.hardware.tool.IToolControl/default" ascii
+              $svc_tool = "tool_service" ascii
+              $svc_tool_control_default = "IToolControl/default" ascii
+
+              // === HAL DAEMON (vendor) ===
+              $hal_tool_daemon = "android.hardware.sprd.tool" ascii
+              $hal_sprd_tool = "sprd.hardware.tool" ascii
+
+              // === LOGCONTROL (nombre engañoso en SGPS) ===
+              $logcontrol_aidl = "LogControlAidl" ascii
+              $logcontrol_tag = "SGPS/LogControlAidl" ascii
+
+              // === SAP RIL (canal de salida) ===
+              $sap_ril_hidl = "SapRilReceiverHidl" ascii
+              $sap_ril_tag = "SapRilReceiver" ascii
+              $isap_service = "android.hardware.radio.V1_0.ISap" ascii
+
+              // === INIT / BOOT ===
+              $init_sprd = "init.sprd" ascii
+              $init_unisoc = "init.unisoc" ascii
+              $insmod_sprd = "insmod" ascii
+
+          condition:
+              // KERNEL MODULE: .ko con strings de SIPC o mailbox
+              ( uint32(0) == 0x64754245 and
+                ( $ko_sprd_iq or $ko_sprd_sipc or $ko_unisoc_mailbox or $ko_mailbox_driver ) and
+                ( $sipc_virt or $mailbox_addr or $chan4 or $chan5 ) )
+              or
+              // DAEMON: binario con SIPC + AIDL tool control
+              ( $daemon_sprd_sipc and
+                ( $sipc_virt_core or $aidl_tool_control or $mailbox_dev ) and
+                ( $chan4 or $chan5 or $chan2 ) )
+              or
+              // AIDL STUB: .so con descriptor + hash + service name
+              ( $aidl_descriptor and $aidl_hash and $svc_tool_control )
+              or
+              // LOGCONTROL: clase SGPS con nombre engañoso
+              ( $logcontrol_aidl and $svc_tool_control_default and $aidl_hash )
+              or
+              // SAP RIL: canal de salida HIDL
+              ( $sap_ril_hidl and $isap_service and $sap_ril_tag )
+              or
+              // INIT SCRIPT: carga módulos al boot
+              ( ( $init_sprd or $init_unisoc ) and $insmod_sprd and
+                ( $ko_sprd_iq or $ko_sprd_sipc or $ko_unisoc_mailbox ) )
+      }
+
+  - name: KernelModuleGlob
+    type: string
+    description: "Glob para kernel modules Unisoc"
+    default: |
+      /vendor/lib/modules/**/*.ko
+      /system/lib/modules/**/*.ko
+      /lib/modules/**/*.ko
+
+  - name: VendorBinGlob
+    type: string
+    description: "Glob para daemons vendor"
+    default: |
+      /vendor/bin/sprd_sipc
+      /vendor/bin/*sipc*
+      /vendor/bin/*sprd*
+      /system/vendor/bin/*sipc*
+
+  - name: VendorEtcGlob
+    type: string
+    description: "Glob para configs HAL"
+    default: |
+      /vendor/etc/init/*sprd*
+      /vendor/etc/init/*sipc*
+      /vendor/etc/init/*tool*
+      /system/etc/init/*sprd*
+      /system/etc/init/*unisoc*
+
+  - name: DeviceGlob
+    type: string
+    description: "Device nodes de mailbox"
+    default: |
+      /dev/unisoc_mailbox*
+      /dev/mbox*
+      /dev/sipc*
+
+sources:
+  - query: |
+      // ============================================================
+      // 1. KERNEL MODULES CARGADOS EN VIVO (proc_modules)
+      // ============================================================
+      LET loaded_modules <= SELECT
+          Name, Size, UseCount, UsedBy, Status
+      FROM proc_modules()
+      WHERE Name =~ "sprd|sipc|unisoc|mailbox|sprd_iq"
+
+      // ============================================================
+      // 2. DAEMON SIPC EN MEMORIA (pslist)
+      // ============================================================
+      LET sipc_process <= SELECT
+          Pid, Name, Exe, CommandLine, StartTime
+      FROM pslist()
+      WHERE Name =~ "sipc|sprd_sipc" or Exe =~ "sipc|sprd"
+
+      // ============================================================
+      // 3. DEVICE NODES DE MAILBOX
+      // ============================================================
+      LET mailbox_devices <= SELECT
+          OSPath, Name, Size, Mode
+      FROM glob(globs=DeviceGlob)
+
+      // ============================================================
+      // 4. INIT SCRIPTS (¿cargan los módulos al boot?)
+      // ============================================================
+      LET init_scripts <= SELECT
+          OSPath, Name, Mtime, Size
+      FROM glob(globs=VendorEtcGlob)
+
+      // ============================================================
+      // 5. YARA SCAN en kernel modules + vendor bins
+      // ============================================================
+      LET yara_ko <= SELECT *
+      FROM yara(
+          rules=YaraRule,
+          globs=KernelModuleGlob,
+          accessor="auto"
+      )
+
+      LET yara_bin <= SELECT *
+      FROM yara(
+          rules=YaraRule,
+          globs=VendorBinGlob,
+          accessor="auto"
+      )
+
+      LET yara_etc <= SELECT *
+      FROM yara(
+          rules=YaraRule,
+          globs=VendorEtcGlob,
+          accessor="auto"
+      )
+
+      // ============================================================
+      // 6. CORRELACIÓN FINAL
+      // ============================================================
+
+      // 6a. Kernel modules cargados + YARA hit
+      SELECT
+          "KERNEL_MODULE" AS DetectionType,
+          m.Name AS Component,
+          m.Size AS ModuleSize,
+          m.UseCount AS ActiveReferences,
+          m.UsedBy AS UsedByProcesses,
+          m.Status AS LoadStatus,
+          y.Rule AS YaraRule,
+          y.String.Name AS MatchedIOC,
+          "CRITICAL: Unisoc IPC kernel module loaded in memory" AS Verdict
+      FROM loaded_modules AS m
+      LEFT JOIN yara_ko AS y ON m.Name =~ y.FullPath
+      WHERE m.Name =~ "sprd_iq|sprd_sipc|sipc|unisoc_mailbox|mailbox"
+
+      UNION
+
+      // 6b. Daemon SIPC corriendo
+      SELECT
+          "SIPC_DAEMON" AS DetectionType,
+          p.Name AS Component,
+          format(format="%d", args=p.Pid) AS ModuleSize,
+          "" AS ActiveReferences,
+          p.CommandLine AS UsedByProcesses,
+          "RUNNING" AS LoadStatus,
+          "" AS YaraRule,
+          "process_running" AS MatchedIOC,
+          "CRITICAL: SIPC daemon active in memory" AS Verdict
+      FROM sipc_process AS p
+
+      UNION
+
+      // 6c. Device nodes de mailbox
+      SELECT
+          "MAILBOX_DEVICE" AS DetectionType,
+          d.Name AS Component,
+          d.Size AS ModuleSize,
+          "" AS ActiveReferences,
+          d.Mode AS UsedByProcesses,
+          "PRESENT" AS LoadStatus,
+          "" AS YaraRule,
+          "device_node_exists" AS MatchedIOC,
+          "CRITICAL: Unisoc mailbox device node present" AS Verdict
+      FROM mailbox_devices AS d
+
+      UNION
+
+      // 6d. YARA hits en vendor bins
+      SELECT
+          "VENDOR_BINARY" AS DetectionType,
+          y2.FullPath AS Component,
+          "" AS ModuleSize,
+          "" AS ActiveReferences,
+          "" AS UsedByProcesses,
+          "ON_DISK" AS LoadStatus,
+          y2.Rule AS YaraRule,
+          y2.String.Name AS MatchedIOC,
+          "HIGH: IPC component found in vendor binary" AS Verdict
+      FROM yara_bin AS y2
+
+      UNION
+
+      // 6e. YARA hits en init scripts
+      SELECT
+          "INIT_SCRIPT" AS DetectionType,
+          y3.FullPath AS Component,
+          "" AS ModuleSize,
+          "" AS ActiveReferences,
+          "" AS UsedByProcesses,
+          "ON_DISK" AS LoadStatus,
+          y3.Rule AS YaraRule,
+          y3.String.Name AS MatchedIOC,
+          "HIGH: Init script loads Unisoc IPC module at boot" AS Verdict
+      FROM yara_etc AS y3
+
+      UNION
+
+      // 6f. YARA hits en kernel modules (disk)
+      SELECT
+          "KERNEL_MODULE_DISK" AS DetectionType,
+          y4.FullPath AS Component,
+          "" AS ModuleSize,
+          "" AS ActiveReferences,
+          "" AS UsedByProcesses,
+          "ON_DISK" AS LoadStatus,
+          y4.Rule AS YaraRule,
+          y4.String.Name AS MatchedIOC,
+          "HIGH: Unisoc IPC kernel module on disk" AS Verdict
+      FROM yara_ko AS y4
+
+column_types:
+  - name: MatchedIOC
+    type: text
+  - name: Verdict
+    type: text   
