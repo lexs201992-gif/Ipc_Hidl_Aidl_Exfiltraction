@@ -1,0 +1,2386 @@
+{
+  "version": "1.0.0",
+  "messages": {
+    "-2136320567": {
+      "message": " Got a going-home request while Split-Screen is foreground, so treat it as Mixed.",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/DefaultMixedHandler.java"
+    },
+    "-2134376374": {
+      "message": "Received backNavigationInfo:%s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_BACK_PREVIEW",
+      "at": "com\/android\/wm\/shell\/back\/BackAnimationController.java"
+    },
+    "-2127414817": {
+      "message": "%s: updateExpansionState, enabled: %b",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipActionsProvider.java"
+    },
+    "-2117150342": {
+      "message": "Fullscreen Task Vanished: #%d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TASK_ORG",
+      "at": "com\/android\/wm\/shell\/fullscreen\/FullscreenTaskListener.java"
+    },
+    "-2076257741": {
+      "message": "Transition requested: %s %s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/Transitions.java"
+    },
+    "-2038605641": {
+      "message": "addSplashScreen: creating context based on task Configuration %s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_STARTING_WINDOW",
+      "at": "com\/android\/wm\/shell\/startingsurface\/SplashscreenContentDrawer.java"
+    },
+    "-2017810598": {
+      "message": "%s the splash screen. Releasing SurfaceControlViewHost for task: %d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_STARTING_WINDOW",
+      "at": "com\/android\/wm\/shell\/startingsurface\/SplashscreenWindowCreator.java"
+    },
+    "-2017478326": {
+      "message": "%s: Relinquish active pointer id on POINTER_UP: %d",
+      "level": "ERROR",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/phone\/PipTouchState.java"
+    },
+    "-2002808516": {
+      "message": "handle shell transition request: %s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_DESKTOP_MODE",
+      "at": "com\/android\/wm\/shell\/desktopmode\/DesktopModeController.java"
+    },
+    "-1986961096": {
+      "message": "%s: resizeAndAnimatePipUnchecked: toBounds=%s duration=%s callers=\n%s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/phone\/PipMotionHelper.java"
+    },
+    "-1967192097": {
+      "message": "%s: transitionToMenuMode(), old menu mode = %s, new menu mode = %s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipBackgroundView.java"
+    },
+    "-1967163262": {
+      "message": "\tchanges=%s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_SYSUI_EVENTS",
+      "at": "com\/android\/wm\/shell\/sysui\/ShellController.java"
+    },
+    "-1965704743": {
+      "message": "%s: skip scheduleOffsetPip, entering pip deferred",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTaskOrganizer.java"
+    },
+    "-1959097851": {
+      "message": "%s: pokeMenu() isMenuVisible=%b",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/phone\/PhonePipMenuController.java"
+    },
+    "-1958388187": {
+      "message": "onExitPipFinished: %s, state=%s leash=%s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTaskOrganizer.java"
+    },
+    "-1955248346": {
+      "message": "%s: fadeOutMenu() isMenuVisible=%b",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/phone\/PhonePipMenuController.java"
+    },
+    "-1949097678": {
+      "message": "startAnimation, check taskInfo: %s, mode: %s, isApplicableTask: %s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/unfold\/UnfoldTransitionHandler.java"
+    },
+    "-1946363811": {
+      "message": "%s: attachPipMenu()",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipMenuController.java"
+    },
+    "-1896444641": {
+      "message": "%s: Defer onTaskInfoChange in current state: %d",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTaskOrganizer.java"
+    },
+    "-1869408059": {
+      "message": "%s: no transaction given",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipMenuController.java"
+    },
+    "-1831687941": {
+      "message": "%s: onPipTransition_Started(), state=%s, direction=%d",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipController.java"
+    },
+    "-1826225975": {
+      "message": "addHandler: %s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/Transitions.java"
+    },
+    "-1757272348": {
+      "message": "Navigation window gone.",
+      "level": "INFO",
+      "group": "WM_SHELL_BACK_PREVIEW",
+      "at": "com\/android\/wm\/shell\/back\/BackAnimationController.java"
+    },
+    "-1750352198": {
+      "message": "onTaskInfoChanged: %s, state=%s oldParams=%s newParams=%s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTaskOrganizer.java"
+    },
+    "-1749640165": {
+      "message": "%s: switchToMenuMode: setting mCurrentMenuMode=%s, mPrevMenuMode=%s",
+      "level": "INFO",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipMenuController.java"
+    },
+    "-1749500832": {
+      "message": "Entering target or closing target is null.",
+      "level": "DEBUG",
+      "group": "WM_SHELL_BACK_PREVIEW",
+      "at": "com\/android\/wm\/shell\/back\/CrossTaskBackAnimation.java"
+    },
+    "-1699627667": {
+      "message": "exitPip: %s, dest=%s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTaskOrganizer.java"
+    },
+    "-1691705141": {
+      "message": "Gesture released, but animation didn't ready.",
+      "level": "WARN",
+      "group": "WM_SHELL_BACK_PREVIEW",
+      "at": "com\/android\/wm\/shell\/back\/BackAnimationController.java"
+    },
+    "-1690488730": {
+      "message": "%s: showMenu()",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipMenuController.java"
+    },
+    "-1686649611": {
+      "message": "Failed to capture edge of window.",
+      "level": "ERROR",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/TransitionAnimationHelper.java"
+    },
+    "-1683614271": {
+      "message": "Existing task: id=%d component=%s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TASK_ORG",
+      "at": "com\/android\/wm\/shell\/ShellTaskOrganizer.java"
+    },
+    "-1679295386": {
+      "message": "%s: getRootTaskInfo() failed, %s",
+      "level": "ERROR",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipController.java"
+    },
+    "-1664932337": {
+      "message": "  returning to 3p home",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENTS_TRANSITION",
+      "at": "com\/android\/wm\/shell\/recents\/RecentsTransitionHandler.java"
+    },
+    "-1662796069": {
+      "message": "%s: onPipDisappeared() state=%s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipController.java"
+    },
+    "-1659561821": {
+      "message": "Entering target or closing target is null.",
+      "level": "DEBUG",
+      "group": "WM_SHELL_BACK_PREVIEW",
+      "at": "com\/android\/wm\/shell\/back\/CrossActivityAnimation.java"
+    },
+    "-1653713784": {
+      "message": "%s: movePipMenu: %s, alpha %s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipMenuController.java"
+    },
+    "-1636860907": {
+      "message": "%s: Failed to send action, %s",
+      "level": "WARN",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/phone\/PipMenuView.java"
+    },
+    "-1616732785": {
+      "message": "[%d] RecentsController.start",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENTS_TRANSITION",
+      "at": "com\/android\/wm\/shell\/recents\/RecentsTransitionHandler.java"
+    },
+    "-1610406480": {
+      "message": "Adding active freeform task: #%d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_DESKTOP_MODE",
+      "at": "com\/android\/wm\/shell\/freeform\/FreeformTaskListener.java"
+    },
+    "-1588940706": {
+      "message": "%s: getEntryDestinationBounds()",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipBoundsAlgorithm.java"
+    },
+    "-1588014542": {
+      "message": "%s: Not allowed to exitPip in current state mState=%d mToken=%s",
+      "level": "WTF",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTaskOrganizer.java"
+    },
+    "-1584013466": {
+      "message": "Copying splash screen window view for task: %d with parcelable %b",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_STARTING_WINDOW",
+      "at": "com\/android\/wm\/shell\/startingsurface\/SplashscreenWindowCreator.java"
+    },
+    "-1577222906": {
+      "message": "%s: exitPip: skipAnimation=%s callers=\n%s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/phone\/PipMotionHelper.java"
+    },
+    "-1566841868": {
+      "message": "%s: Skip onMovementBoundsChanged on rotation change InSwipePipToHomeTransition=%b mWaitForFixedRotation=%b getTransitionState=%d",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTaskOrganizer.java"
+    },
+    "-1560368160": {
+      "message": "Animation is still running",
+      "level": "WARN",
+      "group": "WM_SHELL_BACK_PREVIEW",
+      "at": "com\/android\/wm\/shell\/back\/BackAnimationController.java"
+    },
+    "-1560132950": {
+      "message": "%s: handle PiP enter request",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTransition.java"
+    },
+    "-1549815332": {
+      "message": "%s: insetBounds: %s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipBoundsAlgorithm.java"
+    },
+    "-1532239579": {
+      "message": "%s: the menu surfaces are not attached.",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipMenuController.java"
+    },
+    "-1510332853": {
+      "message": "skip shell transition request: desktop mode not active",
+      "level": "DEBUG",
+      "group": "WM_SHELL_DESKTOP_MODE",
+      "at": "com\/android\/wm\/shell\/desktopmode\/DesktopModeController.java"
+    },
+    "-1507062747": {
+      "message": "onTaskVanished: %s, state=%s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTaskOrganizer.java"
+    },
+    "-1438128520": {
+      "message": "addHandler: Default",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/Transitions.java"
+    },
+    "-1433716912": {
+      "message": "%s: hideMovementHints()",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipMenuView.java"
+    },
+    "-1382704050": {
+      "message": "Display removed: %d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_DRAG_AND_DROP",
+      "at": "com\/android\/wm\/shell\/draganddrop\/DragAndDropController.java"
+    },
+    "-1372777276": {
+      "message": "removePip: %s, state=%s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTaskOrganizer.java"
+    },
+    "-1361800426": {
+      "message": "onFixedRotationFinished: %s, state=%s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTaskOrganizer.java"
+    },
+    "-1361799684": {
+      "message": "Initializing Shell Components: %d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_INIT",
+      "at": "com\/android\/wm\/shell\/sysui\/ShellInit.java"
+    },
+    "-1351326290": {
+      "message": "%s: showMoveMenu()",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipMenuView.java"
+    },
+    "-1343679460": {
+      "message": "RecentsTransitionHandler.startRecentsTransition",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENTS_TRANSITION",
+      "at": "com\/android\/wm\/shell\/recents\/RecentsTransitionHandler.java"
+    },
+    "-1340464399": {
+      "message": "  adding opening taskId=%d at layer=%d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENTS_TRANSITION",
+      "at": "com\/android\/wm\/shell\/recents\/RecentsTransitionHandler.java"
+    },
+    "-1340279385": {
+      "message": "Remove listener=%s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TASK_ORG",
+      "at": "com\/android\/wm\/shell\/ShellTaskOrganizer.java"
+    },
+    "-1330260979": {
+      "message": "User changed: id=%d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_SYSUI_EVENTS",
+      "at": "com\/android\/wm\/shell\/sysui\/ShellController.java"
+    },
+    "-1328080840": {
+      "message": "%s: update(), title: %s, subtitle: %s, mediaSessionToken: %s, #actions: %s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipNotificationController.java"
+    },
+    "-1326129381": {
+      "message": "%s: Missing TvPipActionsProvider",
+      "level": "ERROR",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipNotificationController.java"
+    },
+    "-1325223370": {
+      "message": "Task appeared taskId=%d listener=%s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TASK_ORG",
+      "at": "com\/android\/wm\/shell\/ShellTaskOrganizer.java"
+    },
+    "-1322145249": {
+      "message": "%s: Unrecognized token: %s",
+      "level": "WTF",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTaskOrganizer.java"
+    },
+    "-1312360667": {
+      "message": "createRootTask() displayId=%d winMode=%d listener=%s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TASK_ORG",
+      "at": "com\/android\/wm\/shell\/ShellTaskOrganizer.java"
+    },
+    "-1310405008": {
+      "message": " Splitting PIP into a separate animation because remote-animation likely doesn't support it",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/DefaultMixedHandler.java"
+    },
+    "-1308483871": {
+      "message": " try handler %s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/Transitions.java"
+    },
+    "-1303778599": {
+      "message": "Unable to update focus on the chosen stage: %s",
+      "level": "ERROR",
+      "group": "WM_SHELL_SPLIT_SCREEN",
+      "at": "com\/android\/wm\/shell\/splitscreen\/StageCoordinator.java"
+    },
+    "-1297259344": {
+      "message": " animated by %s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/Transitions.java"
+    },
+    "-1281458586": {
+      "message": "prepareClearFreeformForTasks",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_DESKTOP_MODE",
+      "at": "com\/android\/wm\/shell\/desktopmode\/DesktopModeController.java"
+    },
+    "-1251802755": {
+      "message": "updateDesktopModeActive: active=%s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_DESKTOP_MODE",
+      "at": "com\/android\/wm\/shell\/desktopmode\/DesktopModeController.java"
+    },
+    "-1241080475": {
+      "message": "  splitTransition  skip to start enter split transition since it already exist. ",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/splitscreen\/SplitScreenTransitions.java"
+    },
+    "-1225237129": {
+      "message": "%s: onActivityPinned(), task=%s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipController.java"
+    },
+    "-1220928955": {
+      "message": "Initialize DesktopModeController",
+      "level": "DEBUG",
+      "group": "WM_SHELL_DESKTOP_MODE",
+      "at": "com\/android\/wm\/shell\/desktopmode\/DesktopModeController.java"
+    },
+    "-1219407198": {
+      "message": " Lean on the remote transition handler to fetch a proper remote via TransitionFilter",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/DefaultMixedHandler.java"
+    },
+    "-1213005747": {
+      "message": "%s: New aspect ratio is not valid. hasAspectRatio=%b aspectRatio=%f",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTaskOrganizer.java"
+    },
+    "-1198426044": {
+      "message": "No animation loaded, should choose cross-activity animation?",
+      "level": "DEBUG",
+      "group": "WM_SHELL_BACK_PREVIEW",
+      "at": "com\/android\/wm\/shell\/back\/CustomizeActivityAnimation.java"
+    },
+    "-1183965748": {
+      "message": "  adding pausing taskId=%d at layer=%d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENTS_TRANSITION",
+      "at": "com\/android\/wm\/shell\/recents\/RecentsTransitionHandler.java"
+    },
+    "-1181410214": {
+      "message": "%s: on(Broadcast)Receive(), action=%s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipController.java"
+    },
+    "-1174051562": {
+      "message": "%s: Invalid leash on setPipVisibility: %s",
+      "level": "WARN",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTaskOrganizer.java"
+    },
+    "-1170726109": {
+      "message": "%s: PiP has already been closed by custom close action",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipController.java"
+    },
+    "-1167654715": {
+      "message": "  nav bar changes sides, so not seamless.",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/DefaultTransitionHandler.java"
+    },
+    "-1141104614": {
+      "message": "processAdaptiveIcon: FgMainColor=%s, BgMainColor=%s, IsBgComplex=%b, FromCache=%b, ThemeColor=%s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_STARTING_WINDOW",
+      "at": "com\/android\/wm\/shell\/startingsurface\/SplashscreenContentDrawer.java"
+    },
+    "-1118138034": {
+      "message": "   Skip animating divider bar due to it's remote animating.",
+      "level": "DEBUG",
+      "group": "WM_SHELL_SPLIT_SCREEN",
+      "at": "com\/android\/wm\/shell\/splitscreen\/StageCoordinator.java"
+    },
+    "-1086197727": {
+      "message": "  adding opening leaf taskId=%d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENTS_TRANSITION",
+      "at": "com\/android\/wm\/shell\/recents\/RecentsTransitionHandler.java"
+    },
+    "-1066960526": {
+      "message": "Notify recent tasks changed",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENT_TASKS",
+      "at": "com\/android\/wm\/shell\/recents\/RecentTasksController.java"
+    },
+    "-1063708666": {
+      "message": "[%d] RecentsController.prepareForMerge: Snapshot due to requested display change",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENTS_TRANSITION",
+      "at": "com\/android\/wm\/shell\/recents\/RecentsTransitionHandler.java"
+    },
+    "-1058990760": {
+      "message": "RecentsController.setInputConsumerEnabled: skip, cb?=%b enabled?=%b",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENTS_TRANSITION",
+      "at": "com\/android\/wm\/shell\/recents\/RecentsTransitionHandler.java"
+    },
+    "-1053080117": {
+      "message": "Switch split position: %s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_SPLIT_SCREEN",
+      "at": "com\/android\/wm\/shell\/splitscreen\/StageCoordinator.java"
+    },
+    "-1027114398": {
+      "message": "%s: Failed to get RootTaskInfo for pinned task, %s",
+      "level": "ERROR",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/phone\/PipController.java"
+    },
+    "-1022141965": {
+      "message": "%s: Unable to get pinned stack.",
+      "level": "WARN",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipUtils.java"
+    },
+    "-1012228081": {
+      "message": "%s: placement: %s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipBoundsAlgorithm.java"
+    },
+    "-1006733970": {
+      "message": "Display added: %d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_DRAG_AND_DROP",
+      "at": "com\/android\/wm\/shell\/draganddrop\/DragAndDropController.java"
+    },
+    "-1000962629": {
+      "message": "Animate bounds: from=%s to=%s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_DRAG_AND_DROP",
+      "at": "com\/android\/wm\/shell\/draganddrop\/DropOutlineDrawable.java"
+    },
+    "-989402035": {
+      "message": "onTaskAppearedWithFixedRotation: %s, state=%s animationType=%d",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTaskOrganizer.java"
+    },
+    "-976436888": {
+      "message": "Clear all starting windows immediately",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_STARTING_WINDOW",
+      "at": "com\/android\/wm\/shell\/startingsurface\/StartingSurfaceDrawer.java"
+    },
+    "-974794582": {
+      "message": "exitPip: %s, state=%s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTaskOrganizer.java"
+    },
+    "-969715907": {
+      "message": "%s: Defer onTaskAppeared-SwipePipToHome until end of fixed rotation.",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTaskOrganizer.java"
+    },
+    "-958966913": {
+      "message": "Task start finish, remove starting surface for task: %d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_STARTING_WINDOW",
+      "at": "com\/android\/wm\/shell\/startingsurface\/StartingSurfaceDrawer.java"
+    },
+    "-957941843": {
+      "message": "Start finish-for-sync track %d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/Transitions.java"
+    },
+    "-933413408": {
+      "message": "Received update for desktop mode setting",
+      "level": "DEBUG",
+      "group": "WM_SHELL_DESKTOP_MODE",
+      "at": "com\/android\/wm\/shell\/desktopmode\/DesktopModeController.java"
+    },
+    "-931291801": {
+      "message": "%s: Setting active pointer id on DOWN: %d",
+      "level": "ERROR",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/phone\/PipTouchState.java"
+    },
+    "-929009263": {
+      "message": "[%d] RecentsController.merge: skip, no finish callback",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENTS_TRANSITION",
+      "at": "com\/android\/wm\/shell\/recents\/RecentsTransitionHandler.java"
+    },
+    "-917088632": {
+      "message": "[%d] RecentsController.sendCancel: Snapshotting task=%d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENTS_TRANSITION",
+      "at": "com\/android\/wm\/shell\/recents\/RecentsTransitionHandler.java"
+    },
+    "-913222528": {
+      "message": "Adding dump callback for %s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_INIT",
+      "at": "com\/android\/wm\/shell\/sysui\/ShellCommandHandler.java"
+    },
+    "-880817403": {
+      "message": "Task vanished taskId=%d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TASK_ORG",
+      "at": "com\/android\/wm\/shell\/ShellTaskOrganizer.java"
+    },
+    "-858212510": {
+      "message": "%s: dismiss()",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipNotificationController.java"
+    },
+    "-853329785": {
+      "message": "isRgbSimilarInHsv a:%s, b:%s, contrast ratio:%f",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_STARTING_WINDOW",
+      "at": "com\/android\/wm\/shell\/startingsurface\/SplashscreenContentDrawer.java"
+    },
+    "-824650337": {
+      "message": "[%d] RecentsController.setFinishTaskTransaction: taskId=%d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENTS_TRANSITION",
+      "at": "com\/android\/wm\/shell\/recents\/RecentsTransitionHandler.java"
+    },
+    "-824195809": {
+      "message": "Failed to read DESKTOP_MODE setting %s",
+      "level": "ERROR",
+      "group": "WM_SHELL_DESKTOP_MODE",
+      "at": "com\/android\/wm\/shell\/desktopmode\/DesktopModeStatus.java"
+    },
+    "-761933155": {
+      "message": "onActivityUnpinned: %s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/phone\/PipController.java"
+    },
+    "-757785518": {
+      "message": " Delegate animation for #%d to %s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/RemoteTransitionHandler.java"
+    },
+    "-710770147": {
+      "message": "Add target: %s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_DRAG_AND_DROP",
+      "at": "com\/android\/wm\/shell\/draganddrop\/DragLayout.java"
+    },
+    "-695061991": {
+      "message": "%s: Invalid leash on fadeExistingPip: %s",
+      "level": "WARN",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTaskOrganizer.java"
+    },
+    "-667275149": {
+      "message": "%s: setDelegate(), delegate=%s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipMenuController.java"
+    },
+    "-645411680": {
+      "message": "[%d] RecentsController.merge: calling onTasksAppeared",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENTS_TRANSITION",
+      "at": "com\/android\/wm\/shell\/recents\/RecentsTransitionHandler.java"
+    },
+    "-635035055": {
+      "message": "bringDesktopAppsToFront: tasks=%s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_DESKTOP_MODE",
+      "at": "com\/android\/wm\/shell\/desktopmode\/DesktopModeController.java"
+    },
+    "-632717827": {
+      "message": "Request to %s divider bar from %s.",
+      "level": "DEBUG",
+      "group": "WM_SHELL_SPLIT_SCREEN",
+      "at": "com\/android\/wm\/shell\/splitscreen\/StageCoordinator.java"
+    },
+    "-593738189": {
+      "message": "Finishing gesture with event action: %d",
+      "level": "DEBUG",
+      "group": "WM_SHELL_BACK_PREVIEW",
+      "at": "com\/android\/wm\/shell\/back\/BackAnimationController.java"
+    },
+    "-583774195": {
+      "message": "Display is changing, resolve the animation hint.",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/DefaultTransitionHandler.java"
+    },
+    "-581313329": {
+      "message": "The display#%d has been removed. Skip following steps",
+      "level": "WARN",
+      "group": "WM_SHELL_TASK_ORG",
+      "at": "com\/android\/wm\/shell\/RootTaskDisplayAreaOrganizer.java"
+    },
+    "-576176134": {
+      "message": "%s: onMenuStateChangeStart() mMenuState=%s menuState=%s resize=%s callers=\n%s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/phone\/PhonePipMenuController.java"
+    },
+    "-567615180": {
+      "message": "[%d] RecentsController.cancel: toHome=%b reason=%s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENTS_TRANSITION",
+      "at": "com\/android\/wm\/shell\/recents\/RecentsTransitionHandler.java"
+    },
+    "-566822870": {
+      "message": "[%d] RecentsController.setTransition: id=%s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENTS_TRANSITION",
+      "at": "com\/android\/wm\/shell\/recents\/RecentsTransitionHandler.java"
+    },
+    "-550774733": {
+      "message": "custom animation loaded %s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_BACK_PREVIEW",
+      "at": "com\/android\/wm\/shell\/back\/CustomizeActivityAnimation.java"
+    },
+    "-549380958": {
+      "message": "setWindowingMode: displayId=%d current wmMode=%d new wmMode=%d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_DESKTOP_MODE",
+      "at": "com\/android\/wm\/shell\/desktopmode\/DesktopModeController.java"
+    },
+    "-543442837": {
+      "message": "%s: restrictedKeepClearAreas: %s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipBoundsAlgorithm.java"
+    },
+    "-536447312": {
+      "message": "  One of the splits became empty during a mixed transition (one not handled by split), so make sure split-screen state is cleaned-up. mainStageCount=%d sideStageCount=%d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/splitscreen\/StageCoordinator.java"
+    },
+    "-536438549": {
+      "message": "%s: resizePipUnchecked: toBounds=%s callers=\n%s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/phone\/PipMotionHelper.java"
+    },
+    "-522947324": {
+      "message": "  splitTransition  deduced Resize split screen",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/splitscreen\/SplitScreenTransitions.java"
+    },
+    "-520008159": {
+      "message": "%s: Failed to get estimated menu size",
+      "level": "WTF",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/phone\/PipTouchHandler.java"
+    },
+    "-509165949": {
+      "message": "%s: onPipExpansionToggled, expanded: %b",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipActionsProvider.java"
+    },
+    "-488642852": {
+      "message": "%s: onPipMovement - mCurrentMenuMode=%s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipMenuController.java"
+    },
+    "-480115082": {
+      "message": "moveHomeBehindVisibleTasks: visible tasks %d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_DESKTOP_MODE",
+      "at": "com\/android\/wm\/shell\/desktopmode\/DesktopModeController.java"
+    },
+    "-449756535": {
+      "message": " Got a recents request while Split-Screen is foreground, so treat it as Mixed.",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/DefaultMixedHandler.java"
+    },
+    "-440544752": {
+      "message": "[%d] RecentsController.finishInner: toHome=%b userLeave=%b willFinishToHome=%b state=%d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENTS_TRANSITION",
+      "at": "com\/android\/wm\/shell\/recents\/RecentsTransitionHandler.java"
+    },
+    "-424415681": {
+      "message": "DrawableTester quantize: pure transparent image",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_STARTING_WINDOW",
+      "at": "com\/android\/wm\/shell\/startingsurface\/SplashscreenContentDrawer.java"
+    },
+    "-414557065": {
+      "message": "New configuration change: %s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_SYSUI_EVENTS",
+      "at": "com\/android\/wm\/shell\/sysui\/ShellController.java"
+    },
+    "-411281677": {
+      "message": "%s: Attempted to user resize PIP to or from empty bounds, aborting.",
+      "level": "WARN",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTaskOrganizer.java"
+    },
+    "-408772810": {
+      "message": "%s: updateLayout, width: %s, height: %s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipMenuView.java"
+    },
+    "-387812468": {
+      "message": "%s: onPipTransition_Finished(), state=%s, direction=%d",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipController.java"
+    },
+    "-379762700": {
+      "message": "Start task in background",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_SPLIT_SCREEN",
+      "at": "com\/android\/wm\/shell\/splitscreen\/SplitScreenController.java"
+    },
+    "-374942100": {
+      "message": "%s: updateGravity, expanding: %b, fixedExpandedOrientation: %d",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipBoundsAlgorithm.java"
+    },
+    "-373174550": {
+      "message": "startSwipePipToHome: %s, state=%s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTaskOrganizer.java"
+    },
+    "-362608487": {
+      "message": "Animation didn't finish in %d ms. Resetting...",
+      "level": "WARN",
+      "group": "WM_SHELL_BACK_PREVIEW",
+      "at": "com\/android\/wm\/shell\/back\/BackAnimationController.java"
+    },
+    "-358280047": {
+      "message": "[%d] RecentsController.cleanup",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENTS_TRANSITION",
+      "at": "com\/android\/wm\/shell\/recents\/RecentsTransitionHandler.java"
+    },
+    "-344473798": {
+      "message": "Transition was merged: %s into %s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/Transitions.java"
+    },
+    "-323100848": {
+      "message": "%s: updateExpandedPipSize(): Expanded mode aspect ratio of 0 not supported",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipBoundsAlgorithm.java"
+    },
+    "-310990440": {
+      "message": "moveHomeBehindVisibleTasks: home task not found",
+      "level": "WARN",
+      "group": "WM_SHELL_DESKTOP_MODE",
+      "at": "com\/android\/wm\/shell\/desktopmode\/DesktopModeController.java"
+    },
+    "-272049475": {
+      "message": "Freeform Task Info Changed: #%d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TASK_ORG",
+      "at": "com\/android\/wm\/shell\/freeform\/FreeformTaskListener.java"
+    },
+    "-269346130": {
+      "message": "BackAnimationController: finishBackNavigation()",
+      "level": "DEBUG",
+      "group": "WM_SHELL_BACK_PREVIEW",
+      "at": "com\/android\/wm\/shell\/back\/BackAnimationController.java"
+    },
+    "-267678729": {
+      "message": "%s: movePipToFullscreen(), state=%s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipController.java"
+    },
+    "-260134071": {
+      "message": "%s: skip scheduleAnimateResizePip, entering pip deferred",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTaskOrganizer.java"
+    },
+    "-252777164": {
+      "message": "  opening new taskId=%d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENTS_TRANSITION",
+      "at": "com\/android\/wm\/shell\/recents\/RecentsTransitionHandler.java"
+    },
+    "-246266236": {
+      "message": "%s: unrestrictedKeepClearAreas: %s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipBoundsAlgorithm.java"
+    },
+    "-245959633": {
+      "message": "%s: Unable to update focus, %s",
+      "level": "ERROR",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipMenuController.java"
+    },
+    "-236872543": {
+      "message": "%s: onPipTransitionToTargetBoundsStarted(), orientation changed %b",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipMenuView.java"
+    },
+    "-223019508": {
+      "message": "  normal finish",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENTS_TRANSITION",
+      "at": "com\/android\/wm\/shell\/recents\/RecentsTransitionHandler.java"
+    },
+    "-203572733": {
+      "message": "%s: stashOffset: %d",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipBoundsAlgorithm.java"
+    },
+    "-188242801": {
+      "message": "   Skip animating divider bar due to divider leash not ready.",
+      "level": "DEBUG",
+      "group": "WM_SHELL_SPLIT_SCREEN",
+      "at": "com\/android\/wm\/shell\/splitscreen\/StageCoordinator.java"
+    },
+    "-186408060": {
+      "message": "User profiles changed",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_SYSUI_EVENTS",
+      "at": "com\/android\/wm\/shell\/sysui\/ShellController.java"
+    },
+    "-166960725": {
+      "message": "Freeform Task Appeared: #%d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TASK_ORG",
+      "at": "com\/android\/wm\/shell\/freeform\/FreeformTaskListener.java"
+    },
+    "-152425190": {
+      "message": "%s: close(), closing the edu text drawer because of user action",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipMenuEduTextDrawer.java"
+    },
+    "-146110597": {
+      "message": "start default transition animation, info = %s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/DefaultTransitionHandler.java"
+    },
+    "-141233121": {
+      "message": "  splitTransition  skip to start dismiss split transition since it already exist. reason to  dismiss = %s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/splitscreen\/SplitScreenTransitions.java"
+    },
+    "-141231070": {
+      "message": " Got a PiP-enter request while Split-Screen is active, so treat it as Mixed.",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/DefaultMixedHandler.java"
+    },
+    "-138583547": {
+      "message": "   Merge into remote: %s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/RemoteTransitionHandler.java"
+    },
+    "-137676175": {
+      "message": "isRgbSimilarInHsv hsvDiff: %d, ah: %f, bh: %f, as: %f, bs: %f, av: %f, bv: %f, sqH: %f, sqS: %f, sqV: %f, rsm: %f",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_STARTING_WINDOW",
+      "at": "com\/android\/wm\/shell\/startingsurface\/SplashscreenContentDrawer.java"
+    },
+    "-134333442": {
+      "message": "RecentsTransitionHandler.mergeAnimation: no controller found",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENTS_TRANSITION",
+      "at": "com\/android\/wm\/shell\/recents\/RecentsTransitionHandler.java"
+    },
+    "-133189084": {
+      "message": "[%d] RecentsController.merge: transit_sleep",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENTS_TRANSITION",
+      "at": "com\/android\/wm\/shell\/recents\/RecentsTransitionHandler.java"
+    },
+    "-130262671": {
+      "message": "moveHomeBehindVisibleTasks",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_DESKTOP_MODE",
+      "at": "com\/android\/wm\/shell\/desktopmode\/DesktopModeController.java"
+    },
+    "-104893959": {
+      "message": "%s: schedulePinnedStackPlacement() - pip bounds: %s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipBoundsController.java"
+    },
+    "-101893684": {
+      "message": "%s: Not going to move PiP, either menu or its parent is not created.",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/phone\/PhonePipMenuController.java"
+    },
+    "-97774237": {
+      "message": "%s: Failed to destroy input consumer, %s",
+      "level": "ERROR",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/phone\/PipInputConsumer.java"
+    },
+    "-96389579": {
+      "message": "onFixedRotationStarted: %s, state=%s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTaskOrganizer.java"
+    },
+    "-89364644": {
+      "message": "%s: Failed to send action, %s",
+      "level": "WARN",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipCustomAction.java"
+    },
+    "-83501820": {
+      "message": "%s: Unable to set alert PiP state change.",
+      "level": "ERROR",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipBoundsState.java"
+    },
+    "-56086801": {
+      "message": "canceling keyguard exit transition %s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/keyguard\/KeyguardTransitionHandler.java"
+    },
+    "-14660627": {
+      "message": "onGestureFinished() mTriggerBack == %s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_BACK_PREVIEW",
+      "at": "com\/android\/wm\/shell\/back\/BackAnimationController.java"
+    },
+    "-12724793": {
+      "message": "%s: Unable to update focus, %s",
+      "level": "ERROR",
+      "group": "WM_SHELL_SPLIT_SCREEN",
+      "at": "com\/android\/wm\/shell\/splitscreen\/tv\/TvSplitMenuController.java"
+    },
+    "-12659856": {
+      "message": "%s: onImeVisibilityChanged(), visible=%b, height=%d",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipController.java"
+    },
+    "8391559": {
+      "message": "[%d] RecentsController.merge: empty pausing tasks",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENTS_TRANSITION",
+      "at": "com\/android\/wm\/shell\/recents\/RecentsTransitionHandler.java"
+    },
+    "17393967": {
+      "message": " Animation is a mix of display change and split change.",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/DefaultMixedHandler.java"
+    },
+    "25777518": {
+      "message": "  returning to app",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENTS_TRANSITION",
+      "at": "com\/android\/wm\/shell\/recents\/RecentsTransitionHandler.java"
+    },
+    "35922217": {
+      "message": "%s: startScrollEduText(), repeat=%d",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipMenuEduTextDrawer.java"
+    },
+    "39720036": {
+      "message": "%s: getAdjustedDestinationBounds: %f",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipBoundsAlgorithm.java"
+    },
+    "41497685": {
+      "message": "  Not leaving split, so just forward animation to Pip-Handler.",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/DefaultMixedHandler.java"
+    },
+    "42311280": {
+      "message": "  display has system alert windows, so not seamless.",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/DefaultTransitionHandler.java"
+    },
+    "53183017": {
+      "message": "Non-visible anim so abort: %s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/Transitions.java"
+    },
+    "66677149": {
+      "message": "Using registered One-shot remote transition %s for #%d.",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/OneShotRemoteHandler.java"
+    },
+    "74753421": {
+      "message": "%s: Invalid leash on prepareFinishResizeTransaction: %s",
+      "level": "WARN",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTaskOrganizer.java"
+    },
+    "79218209": {
+      "message": "%s: Actions provider is not set",
+      "level": "ERROR",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipMenuController.java"
+    },
+    "83467309": {
+      "message": "%s: onPinnedActivityRestartAttempt()",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipController.java"
+    },
+    "86925348": {
+      "message": "  closing pausing taskId=%d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENTS_TRANSITION",
+      "at": "com\/android\/wm\/shell\/recents\/RecentsTransitionHandler.java"
+    },
+    "101310246": {
+      "message": "  opening new leaf taskId=%d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENTS_TRANSITION",
+      "at": "com\/android\/wm\/shell\/recents\/RecentsTransitionHandler.java"
+    },
+    "111706912": {
+      "message": "Fullscreen Task Appeared: #%d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TASK_ORG",
+      "at": "com\/android\/wm\/shell\/fullscreen\/FullscreenTaskListener.java"
+    },
+    "120456366": {
+      "message": "loadAnimation: anim=%s animAttr=0x%x type=%s isEntrance=%b",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/TransitionAnimationHelper.java"
+    },
+    "138343607": {
+      "message": " try firstHandler %s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/Transitions.java"
+    },
+    "155072274": {
+      "message": "%s: replaceCustomActions, count: %d",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipActionsProvider.java"
+    },
+    "157713005": {
+      "message": "Task info changed taskId=%d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TASK_ORG",
+      "at": "com\/android\/wm\/shell\/ShellTaskOrganizer.java"
+    },
+    "163928195": {
+      "message": "[%d] RecentsController.cancel: calling onAnimationCanceled %s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENTS_TRANSITION",
+      "at": "com\/android\/wm\/shell\/recents\/RecentsTransitionHandler.java"
+    },
+    "165317020": {
+      "message": "  split is active so using splitTransition to handle request. triggerTask=%d type=%s mainChildren=%d sideChildren=%d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/splitscreen\/StageCoordinator.java"
+    },
+    "167766699": {
+      "message": "prepareClearBoundsForTasks",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_DESKTOP_MODE",
+      "at": "com\/android\/wm\/shell\/desktopmode\/DesktopModeController.java"
+    },
+    "171349657": {
+      "message": "%s: closeMenu(), state before=%s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipController.java"
+    },
+    "189441961": {
+      "message": "Start back to activity animation.",
+      "level": "DEBUG",
+      "group": "WM_SHELL_BACK_PREVIEW",
+      "at": "com\/android\/wm\/shell\/back\/CrossActivityAnimation.java"
+    },
+    "190882132": {
+      "message": "%s: onConfigurationChanged(), state=%s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipController.java"
+    },
+    "214412327": {
+      "message": "RemoteTransition directly requested for %s: %s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/RemoteTransitionHandler.java"
+    },
+    "216824038": {
+      "message": "Start back to customize animation.",
+      "level": "DEBUG",
+      "group": "WM_SHELL_BACK_PREVIEW",
+      "at": "com\/android\/wm\/shell\/back\/CustomizeActivityAnimation.java"
+    },
+    "217559295": {
+      "message": "setPipVisibility: %s, state=%s visible=%s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTaskOrganizer.java"
+    },
+    "233541056": {
+      "message": "unable to update windowing mode for display %d display not found",
+      "level": "ERROR",
+      "group": "WM_SHELL_DESKTOP_MODE",
+      "at": "com\/android\/wm\/shell\/desktopmode\/DesktopModeController.java"
+    },
+    "233743459": {
+      "message": "Invalid surface rotation angle in config_deviceTabletopRotations: %d",
+      "level": "ERROR",
+      "group": "WM_SHELL_FOLDABLE",
+      "at": "com\/android\/wm\/shell\/common\/TabletopModeController.java"
+    },
+    "255316647": {
+      "message": "skip shell transition request: not freeform task",
+      "level": "DEBUG",
+      "group": "WM_SHELL_DESKTOP_MODE",
+      "at": "com\/android\/wm\/shell\/desktopmode\/DesktopModeController.java"
+    },
+    "261383510": {
+      "message": "Freeform Task Focus Changed: #%d focused=%b",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TASK_ORG",
+      "at": "com\/android\/wm\/shell\/freeform\/FreeformTaskListener.java"
+    },
+    "274140888": {
+      "message": "Animate alpha: from=%d to=%d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_DRAG_AND_DROP",
+      "at": "com\/android\/wm\/shell\/draganddrop\/DropOutlineDrawable.java"
+    },
+    "276313851": {
+      "message": "%s: onPipWindowFocusChanged - focused=%b",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipMenuController.java"
+    },
+    "292417572": {
+      "message": "start keyguard %s transition, info = %s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/keyguard\/KeyguardTransitionHandler.java"
+    },
+    "312460249": {
+      "message": "unknown keyguard transition %s",
+      "level": "ERROR",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/keyguard\/KeyguardTransitionHandler.java"
+    },
+    "313798264": {
+      "message": "[%d] RecentsController.screenshotTask: taskId=%d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENTS_TRANSITION",
+      "at": "com\/android\/wm\/shell\/recents\/RecentsTransitionHandler.java"
+    },
+    "324150079": {
+      "message": "onTaskAppeared: %s, state=%s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTaskOrganizer.java"
+    },
+    "335161156": {
+      "message": "%s: onExitMoveMode - mCurrentMenuMode=%s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipMenuController.java"
+    },
+    "359760983": {
+      "message": "Track %d became idle",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/Transitions.java"
+    },
+    "370058243": {
+      "message": "%s: Failed to remove PiP, %s",
+      "level": "ERROR",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTaskOrganizer.java"
+    },
+    "375908576": {
+      "message": "Clip description: handlingDrag=%b itemCount=%d mimeTypes=%s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_DRAG_AND_DROP",
+      "at": "com\/android\/wm\/shell\/draganddrop\/DragAndDropController.java"
+    },
+    "377854703": {
+      "message": "%s: Device doesn't support Pip feature",
+      "level": "WARN",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/phone\/PipController.java"
+    },
+    "396213894": {
+      "message": "setWindowingMode: displayId=%d current wmMode=%d new wmMode=%d",
+      "level": "DEBUG",
+      "group": "WM_SHELL_DESKTOP_MODE",
+      "at": "com\/android\/wm\/shell\/RootDisplayAreaOrganizer.java"
+    },
+    "428468608": {
+      "message": "DrawableColorTester: replace drawable with bottom layer drawable",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_STARTING_WINDOW",
+      "at": "com\/android\/wm\/shell\/startingsurface\/SplashscreenContentDrawer.java"
+    },
+    "444275101": {
+      "message": "bringDesktopAppsToFront: reordering all active tasks to the front",
+      "level": "DEBUG",
+      "group": "WM_SHELL_DESKTOP_MODE",
+      "at": "com\/android\/wm\/shell\/desktopmode\/DesktopModeController.java"
+    },
+    "444814824": {
+      "message": "No transition roots in %s so abort",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/Transitions.java"
+    },
+    "453029459": {
+      "message": "  3p launching home",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENTS_TRANSITION",
+      "at": "com\/android\/wm\/shell\/recents\/RecentsTransitionHandler.java"
+    },
+    "462871743": {
+      "message": "%s: onActionsChanged()",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipController.java"
+    },
+    "481673835": {
+      "message": "addListenerForTaskId taskId=%s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TASK_ORG",
+      "at": "com\/android\/wm\/shell\/ShellTaskOrganizer.java"
+    },
+    "482713286": {
+      "message": "applyExitAnimation delayed: %s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_STARTING_WINDOW",
+      "at": "com\/android\/wm\/shell\/startingsurface\/SplashscreenContentDrawer.java"
+    },
+    "482946393": {
+      "message": "  opening pausing %staskId=%d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENTS_TRANSITION",
+      "at": "com\/android\/wm\/shell\/recents\/RecentsTransitionHandler.java"
+    },
+    "490784151": {
+      "message": "All active transition animations finished",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/Transitions.java"
+    },
+    "508166491": {
+      "message": "Defer removing snapshot surface in %d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_STARTING_WINDOW",
+      "at": "com\/android\/wm\/shell\/startingsurface\/StartingSurfaceDrawer.java"
+    },
+    "508288000": {
+      "message": "Warning, onExitPipFinished() called multiple times in the same session",
+      "level": "WARN",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTaskOrganizer.java"
+    },
+    "535641167": {
+      "message": " Animation is actually mixed since entering-PiP caused us to leave split and return home.",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/DefaultMixedHandler.java"
+    },
+    "559199821": {
+      "message": "%s: refocusButton, position: %d",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipMenuView.java"
+    },
+    "568095130": {
+      "message": "Adding command class %s for %s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_INIT",
+      "at": "com\/android\/wm\/shell\/sysui\/ShellCommandHandler.java"
+    },
+    "580605218": {
+      "message": "Registering organizer",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TASK_ORG",
+      "at": "com\/android\/wm\/shell\/ShellTaskOrganizer.java"
+    },
+    "590143644": {
+      "message": "Directly starting a new transition type=%d wct=%s handler=%s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/Transitions.java"
+    },
+    "599056174": {
+      "message": "%s: movePipToOppositeSide",
+      "level": "INFO",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipController.java"
+    },
+    "599868787": {
+      "message": "Playing animation for %s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/Transitions.java"
+    },
+    "601418867": {
+      "message": "%s: Not allowed to removePip in current state mState=%d mToken=%s mLeash=%s",
+      "level": "WTF",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTaskOrganizer.java"
+    },
+    "612660725": {
+      "message": "  adding pausing leaf home taskId=%d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENTS_TRANSITION",
+      "at": "com\/android\/wm\/shell\/recents\/RecentsTransitionHandler.java"
+    },
+    "615101231": {
+      "message": " Attempt to merge sync %s into %s via a SLEEP proxy",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/Transitions.java"
+    },
+    "617001002": {
+      "message": "%s: hideMenu() state=%s isMenuVisible=%s animationType=%s resize=%s callers=\n%s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/phone\/PhonePipMenuController.java"
+    },
+    "619393728": {
+      "message": "addSplashScreen: apply overrideConfig %s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_STARTING_WINDOW",
+      "at": "com\/android\/wm\/shell\/startingsurface\/SplashscreenContentDrawer.java"
+    },
+    "626219143": {
+      "message": "%s: onMediaActionsChanged()",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipActionsProvider.java"
+    },
+    "628675951": {
+      "message": "Keyguard dismiss animation finished",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_SYSUI_EVENTS",
+      "at": "com\/android\/wm\/shell\/sysui\/ShellController.java"
+    },
+    "638393598": {
+      "message": "%s: applyPendingPlacement()",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipBoundsController.java"
+    },
+    "645504978": {
+      "message": "Abort swipe-pip-to-home for %s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTaskOrganizer.java"
+    },
+    "648504948": {
+      "message": "  splitTransition  deduced Enter split screen",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/splitscreen\/SplitScreenTransitions.java"
+    },
+    "653686066": {
+      "message": "removePipImmediately: %s, state=%s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTaskOrganizer.java"
+    },
+    "655169607": {
+      "message": "%s: updateGravity, new gravity: %s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipBoundsAlgorithm.java"
+    },
+    "674201280": {
+      "message": "%s: removePip: callers=\n%s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/phone\/PipMotionHelper.java"
+    },
+    "677124681": {
+      "message": "%s: mTaskInfo is not set",
+      "level": "WARN",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTaskOrganizer.java"
+    },
+    "677213986": {
+      "message": "%s: updateExpandedPipSize(): expanded size, width: %d, height: %d",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipBoundsAlgorithm.java"
+    },
+    "680378294": {
+      "message": "%s: updateGravity, keycode: %d",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipBoundsAlgorithm.java"
+    },
+    "690469724": {
+      "message": "[%d] RecentsController.DeathRecipient: binder died",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENTS_TRANSITION",
+      "at": "com\/android\/wm\/shell\/recents\/RecentsTransitionHandler.java"
+    },
+    "707170340": {
+      "message": " animated by firstHandler",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/Transitions.java"
+    },
+    "712529701": {
+      "message": "%s: updateMenuLayout() state=%s isMenuVisible=%s callers=\n%s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/phone\/PhonePipMenuController.java"
+    },
+    "717477794": {
+      "message": "BackAnimationController: startAnimation()",
+      "level": "DEBUG",
+      "group": "WM_SHELL_BACK_PREVIEW",
+      "at": "com\/android\/wm\/shell\/back\/BackAnimationController.java"
+    },
+    "736112492": {
+      "message": "clearing bounds for token=%s taskInfo=%s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_DESKTOP_MODE",
+      "at": "com\/android\/wm\/shell\/desktopmode\/DesktopModeController.java"
+    },
+    "740189675": {
+      "message": "BackAnimationController: startPostCommitAnimation()",
+      "level": "DEBUG",
+      "group": "WM_SHELL_BACK_PREVIEW",
+      "at": "com\/android\/wm\/shell\/back\/BackAnimationController.java"
+    },
+    "744990182": {
+      "message": "Entering target or closing target is null.",
+      "level": "DEBUG",
+      "group": "WM_SHELL_BACK_PREVIEW",
+      "at": "com\/android\/wm\/shell\/back\/CustomizeActivityAnimation.java"
+    },
+    "765927729": {
+      "message": "%s: Defer entering PiP alpha animation, fixed rotation is ongoing",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTaskOrganizer.java"
+    },
+    "791232520": {
+      "message": "Cancel entering split as not supporting multi-instances",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_SPLIT_SCREEN",
+      "at": "com\/android\/wm\/shell\/splitscreen\/SplitScreenController.java"
+    },
+    "793751866": {
+      "message": "addSplashScreen for package: %s with theme: %s for task: %d, suggestType: %d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_STARTING_WINDOW",
+      "at": "com\/android\/wm\/shell\/startingsurface\/SplashscreenContentDrawer.java"
+    },
+    "823755091": {
+      "message": "Transition animation finished (aborted=%b), notifying core %s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/Transitions.java"
+    },
+    "824963507": {
+      "message": "%s: showMenu() state=%s isMenuVisible=%s allowMenuTimeout=%s willResizeMenu=%s withDelay=%s showResizeHandle=%s callers=\n%s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/phone\/PhonePipMenuController.java"
+    },
+    "826113962": {
+      "message": "onActivityRestartAttempt: %s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/phone\/PipController.java"
+    },
+    "835205025": {
+      "message": "%s: resizePipMenu: %s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipMenuController.java"
+    },
+    "838524130": {
+      "message": "Alpha animation is expired. Use bounds animation.",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipAnimationController.java"
+    },
+    "842293805": {
+      "message": "%s: Failed to create input consumer, %s",
+      "level": "ERROR",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/phone\/PipInputConsumer.java"
+    },
+    "846227226": {
+      "message": "%s: TaskInfo.topActivityInfo is null",
+      "level": "WARN",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/pip\/PipTransition.java"
+    },
+    "857925722": {
+      "message": "%s: updateMenuBounds: %s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipMenuController.java"
+    },
+    "867205103": {
+      "message": "[%d] RecentsController.setInputConsumerEnabled: set focus to recents",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENTS_TRANSITION",
+      "at": "com\/android\/wm\/shell\/recents\/RecentsTransitionHandler.java"
+    },
+    "888452073": {
+      "message": "The icon is not an AdaptiveIconDrawable",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_STARTING_WINDOW",
+      "at": "com\/android\/wm\/shell\/startingsurface\/SplashscreenContentDrawer.java"
+    },
+    "917920067": {
+      "message": "%s: closeMenu()",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipMenuController.java"
+    },
+    "927833074": {
+      "message": "Remove split pair: %d, %d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENT_TASKS",
+      "at": "com\/android\/wm\/shell\/recents\/RecentTasksController.java"
+    },
+    "929975087": {
+      "message": "did not create taskSnapshot due to being in PIP",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_STARTING_WINDOW",
+      "at": "com\/android\/wm\/shell\/startingsurface\/TaskSnapshotWindow.java"
+    },
+    "965672371": {
+      "message": "Failed to find Task to reparent surface taskId=%d",
+      "level": "WARN",
+      "group": "WM_SHELL_TASK_ORG",
+      "at": "com\/android\/wm\/shell\/ShellTaskOrganizer.java"
+    },
+    "967375804": {
+      "message": "RemoteTransition directly requested for %s: %s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/OneShotRemoteHandler.java"
+    },
+    "967922481": {
+      "message": "  nav bar allows seamless.",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/DefaultTransitionHandler.java"
+    },
+    "970879579": {
+      "message": "Set divider bar %s from %s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_SPLIT_SCREEN",
+      "at": "com\/android\/wm\/shell\/common\/split\/DividerView.java"
+    },
+    "980952660": {
+      "message": "Task root back pressed taskId=%d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TASK_ORG",
+      "at": "com\/android\/wm\/shell\/ShellTaskOrganizer.java"
+    },
+    "990371881": {
+      "message": " Checking filter %s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/RemoteTransitionHandler.java"
+    },
+    "1015274864": {
+      "message": "  wallpaper is participating but isn't seamless.",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/DefaultTransitionHandler.java"
+    },
+    "1015459141": {
+      "message": "%s: init()",
+      "level": "INFO",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipMenuEduTextDrawer.java"
+    },
+    "1033643551": {
+      "message": "%s: screenSize: %s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipBoundsAlgorithm.java"
+    },
+    "1034258818": {
+      "message": "%s: onPipTransition_Canceled(), state=%s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipController.java"
+    },
+    "1037658567": {
+      "message": "create taskSnapshot surface for task: %d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_STARTING_WINDOW",
+      "at": "com\/android\/wm\/shell\/startingsurface\/TaskSnapshotWindow.java"
+    },
+    "1060105076": {
+      "message": "Set TRUSTED_OVERLAY for Task#%d",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTransition.java"
+    },
+    "1070270131": {
+      "message": "onTransitionReady %s: %s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/Transitions.java"
+    },
+    "1131163854": {
+      "message": "%s: showPictureInPictureMenu(), state=%s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipController.java"
+    },
+    "1139121952": {
+      "message": "%s: startExitAnimation() not exiting to fullscreen",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTransition.java"
+    },
+    "1145580304": {
+      "message": "Transition %s ready while %s is still animating. Notify the animating transition in case they can be merged",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/Transitions.java"
+    },
+    "1155282524": {
+      "message": "BackAnimationController: onBackAnimationFinished()",
+      "level": "DEBUG",
+      "group": "WM_SHELL_BACK_PREVIEW",
+      "at": "com\/android\/wm\/shell\/back\/BackAnimationController.java"
+    },
+    "1167817788": {
+      "message": "  rotation involves upside-down portrait, so not seamless.",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/DefaultTransitionHandler.java"
+    },
+    "1168568957": {
+      "message": "%s: Invalid active pointer id on MOVE: %d",
+      "level": "ERROR",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/phone\/PipTouchState.java"
+    },
+    "1184615936": {
+      "message": "Set drop target window visibility: displayId=%d visibility=%d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_DRAG_AND_DROP",
+      "at": "com\/android\/wm\/shell\/draganddrop\/DragAndDropController.java"
+    },
+    "1188911440": {
+      "message": "initAnimation mMotionStarted=%b",
+      "level": "DEBUG",
+      "group": "WM_SHELL_BACK_PREVIEW",
+      "at": "com\/android\/wm\/shell\/back\/BackAnimationController.java"
+    },
+    "1189106472": {
+      "message": "skip shell transition request: unsupported type %s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_DESKTOP_MODE",
+      "at": "com\/android\/wm\/shell\/desktopmode\/DesktopModeController.java"
+    },
+    "1194212228": {
+      "message": "%s: taskInfo=%s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipController.java"
+    },
+    "1215677233": {
+      "message": "  Rotation IS seamless.",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/DefaultTransitionHandler.java"
+    },
+    "1218213214": {
+      "message": "Removing taskSnapshot surface, mHasDrawn=%b",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_STARTING_WINDOW",
+      "at": "com\/android\/wm\/shell\/startingsurface\/TaskSnapshotWindow.java"
+    },
+    "1288760762": {
+      "message": "processAdaptiveIcon: draw whole icon",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_STARTING_WINDOW",
+      "at": "com\/android\/wm\/shell\/startingsurface\/SplashscreenContentDrawer.java"
+    },
+    "1302862101": {
+      "message": "unable to update windowing mode for display %d display not found",
+      "level": "ERROR",
+      "group": "WM_SHELL_DESKTOP_MODE",
+      "at": "com\/android\/wm\/shell\/RootDisplayAreaOrganizer.java"
+    },
+    "1303376248": {
+      "message": "%s: new gravity: %s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipBoundsAlgorithm.java"
+    },
+    "1315133481": {
+      "message": "%s: getEduTextShowDuration(), showDuration=%d",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipMenuEduTextDrawer.java"
+    },
+    "1325170887": {
+      "message": "%s: Invalid active pointer id on UP: %d",
+      "level": "ERROR",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/phone\/PipTouchState.java"
+    },
+    "1332460476": {
+      "message": "%s: Abort animation, invalid leash",
+      "level": "WARN",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTaskOrganizer.java"
+    },
+    "1338996709": {
+      "message": "mPipFinishResizeWCTRunnable is set to be called once window updates",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTaskOrganizer.java"
+    },
+    "1353368200": {
+      "message": "%s: onExpandedAspectRatioChanged: %f",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipController.java"
+    },
+    "1354959912": {
+      "message": "RecentsTransitionHandler.startAnimation: no controller found",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENTS_TRANSITION",
+      "at": "com\/android\/wm\/shell\/recents\/RecentsTransitionHandler.java"
+    },
+    "1367765167": {
+      "message": "%s: TaskInfo.topActivityInfo is null",
+      "level": "WARN",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/pip\/PipTaskOrganizer.java"
+    },
+    "1375648146": {
+      "message": "   Defer showing divider bar due to keyguard showing.",
+      "level": "DEBUG",
+      "group": "WM_SHELL_SPLIT_SCREEN",
+      "at": "com\/android\/wm\/shell\/splitscreen\/StageCoordinator.java"
+    },
+    "1376716975": {
+      "message": "%s:  > cannot open Menu from the current state.",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipController.java"
+    },
+    "1380842406": {
+      "message": "%s: showMovementHints(), position: %s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipMenuView.java"
+    },
+    "1399822979": {
+      "message": "%s: trying to remove invalid content overlay (%s)",
+      "level": "WARN",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTaskOrganizer.java"
+    },
+    "1408555887": {
+      "message": "%s: onAspectRatioChanged: %f",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipController.java"
+    },
+    "1421472994": {
+      "message": "%s: pipSize: %s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipBoundsAlgorithm.java"
+    },
+    "1423767195": {
+      "message": "Add split pair: %d, %d, %s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENT_TASKS",
+      "at": "com\/android\/wm\/shell\/recents\/RecentTasksController.java"
+    },
+    "1455203829": {
+      "message": "%s: showMovementMenu()",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipMenuController.java"
+    },
+    "1476597384": {
+      "message": "%s: show %s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipNotificationController.java"
+    },
+    "1481510239": {
+      "message": "Initial Configuration: %s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_SYSUI_EVENTS",
+      "at": "com\/android\/wm\/shell\/sysui\/ShellController.java"
+    },
+    "1481772149": {
+      "message": "Current target: %s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_DRAG_AND_DROP",
+      "at": "com\/android\/wm\/shell\/draganddrop\/DragLayout.java"
+    },
+    "1483878713": {
+      "message": "%s: onTaskStackChanged()",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipController.java"
+    },
+    "1495057074": {
+      "message": "%s: setState(), state=%s, prev=%s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipController.java"
+    },
+    "1496564310": {
+      "message": "%s: movePipTo() - new pip bounds: %s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipBoundsController.java"
+    },
+    "1500106685": {
+      "message": "%s: SwipePipToHome should not use fixed rotation %d",
+      "level": "WARN",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/pip\/PipTransition.java"
+    },
+    "1535727272": {
+      "message": "preferredStartingWindowType newTask=%b, taskSwitch=%b, processRunning=%b, allowTaskSnapshot=%b, activityCreated=%b, isSolidColorSplashScreen=%b, legacySplashScreen=%b, activityDrawn=%b, windowless=%b, topIsHome=%b",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_STARTING_WINDOW",
+      "at": "com\/android\/wm\/shell\/startingsurface\/phone\/PhoneStartingWindowTypeAlgorithm.java"
+    },
+    "1573301134": {
+      "message": "[%d] RecentsController.start: calling onAnimationStart",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENTS_TRANSITION",
+      "at": "com\/android\/wm\/shell\/recents\/RecentsTransitionHandler.java"
+    },
+    "1575272293": {
+      "message": "%s: togglePipExpansion()",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipController.java"
+    },
+    "1581014830": {
+      "message": "%s: Failed to register pinned stack listener, %s",
+      "level": "ERROR",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipController.java"
+    },
+    "1585164509": {
+      "message": "Adding MULTIPLE_TASK",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_SPLIT_SCREEN",
+      "at": "com\/android\/wm\/shell\/splitscreen\/SplitScreenController.java"
+    },
+    "1592050575": {
+      "message": "RecentsTransitionHandler.startAnimation: failed to start animation",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENTS_TRANSITION",
+      "at": "com\/android\/wm\/shell\/recents\/RecentsTransitionHandler.java"
+    },
+    "1614285461": {
+      "message": "%s: Unable to update focus as menu appears\/disappears, %s",
+      "level": "ERROR",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/phone\/PhonePipMenuController.java"
+    },
+    "1615202766": {
+      "message": "%s: getPinnedTaskInfo()",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipController.java"
+    },
+    "1627925042": {
+      "message": "%s: Accommodate aspect ratio",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipBoundsAlgorithm.java"
+    },
+    "1636471665": {
+      "message": "No custom animation loaded",
+      "level": "ERROR",
+      "group": "WM_SHELL_BACK_PREVIEW",
+      "at": "com\/android\/wm\/shell\/back\/CustomizeActivityAnimation.java"
+    },
+    "1639976644": {
+      "message": "onActivityPinned: %s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/phone\/PipController.java"
+    },
+    "1683724188": {
+      "message": "%s: showAllActionsMenu(), resetMenu %b",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipMenuView.java"
+    },
+    "1695981058": {
+      "message": "[%d] RecentsController.detachNavigationBarFromApp",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENTS_TRANSITION",
+      "at": "com\/android\/wm\/shell\/recents\/RecentsTransitionHandler.java"
+    },
+    "1707345146": {
+      "message": "Transition doesn't have explicit remote, search filters for match for %s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/RemoteTransitionHandler.java"
+    },
+    "1714592462": {
+      "message": "%s: Invalid leash on fadeExistingPip: %s",
+      "level": "WARN",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTransition.java"
+    },
+    "1730840720": {
+      "message": "clearing windowing mode for token=%s taskInfo=%s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_DESKTOP_MODE",
+      "at": "com\/android\/wm\/shell\/desktopmode\/DesktopModeController.java"
+    },
+    "1745263573": {
+      "message": "\t%s init took %dms",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_INIT",
+      "at": "com\/android\/wm\/shell\/sysui\/ShellInit.java"
+    },
+    "1746143857": {
+      "message": "%s: No window of exiting PIP is found. Can't play expand animation",
+      "level": "WARN",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTransition.java"
+    },
+    "1761077575": {
+      "message": "%s: Aspect ratio is too extreme, use max size",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipBoundsAlgorithm.java"
+    },
+    "1774992763": {
+      "message": "%s: scheduleFinishResizePip with null leash! mState=%d",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTaskOrganizer.java"
+    },
+    "1787276183": {
+      "message": "  display requests explicit seamless",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/DefaultTransitionHandler.java"
+    },
+    "1795696385": {
+      "message": "%s: animateToOffset: originalBounds=%s offset=%s callers=\n%s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/phone\/PipMotionHelper.java"
+    },
+    "1796557761": {
+      "message": "Converting mixed transition into a keyguard transition",
+      "level": "WARN",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/DefaultMixedHandler.java"
+    },
+    "1814468056": {
+      "message": "%s: Position hasn't changed",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipController.java"
+    },
+    "1852066478": {
+      "message": "  splitTransition  deduced Dismiss due to %s. toTop=%s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/splitscreen\/SplitScreenTransitions.java"
+    },
+    "1855178708": {
+      "message": "%s: onPipTransitionFinished()",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipMenuView.java"
+    },
+    "1857540542": {
+      "message": "  adding pausing leaf taskId=%d at layer=%d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENTS_TRANSITION",
+      "at": "com\/android\/wm\/shell\/recents\/RecentsTransitionHandler.java"
+    },
+    "1861372954": {
+      "message": "Adding external interface from %s with key %s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_INIT",
+      "at": "com\/android\/wm\/shell\/sysui\/ShellController.java"
+    },
+    "1862198614": {
+      "message": "Drag event: action=%s x=%f y=%f xOffset=%f yOffset=%f",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_DRAG_AND_DROP",
+      "at": "com\/android\/wm\/shell\/draganddrop\/DragAndDropController.java"
+    },
+    "1867524246": {
+      "message": "Start back to task animation.",
+      "level": "DEBUG",
+      "group": "WM_SHELL_BACK_PREVIEW",
+      "at": "com\/android\/wm\/shell\/back\/CrossTaskBackAnimation.java"
+    },
+    "1867686022": {
+      "message": "getWindowAttrs: window attributes color: %s, replace icon: %b",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_STARTING_WINDOW",
+      "at": "com\/android\/wm\/shell\/startingsurface\/SplashscreenContentDrawer.java"
+    },
+    "1899149317": {
+      "message": "Freeform Task Vanished: #%d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TASK_ORG",
+      "at": "com\/android\/wm\/shell\/freeform\/FreeformTaskListener.java"
+    },
+    "1908094340": {
+      "message": "  setting recents activity layer=%d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENTS_TRANSITION",
+      "at": "com\/android\/wm\/shell\/recents\/RecentsTransitionHandler.java"
+    },
+    "1915000700": {
+      "message": "  task %s isn't requesting seamless, so not seamless.",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/DefaultTransitionHandler.java"
+    },
+    "1931730986": {
+      "message": "%s: Task vanished, skip fadeOutAndRemoveOverlay",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTaskOrganizer.java"
+    },
+    "1941251996": {
+      "message": "Keyguard visibility changed: visible=%b occluded=%b animatingDismiss=%b",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_SYSUI_EVENTS",
+      "at": "com\/android\/wm\/shell\/sysui\/ShellController.java"
+    },
+    "1945591550": {
+      "message": "No valid config_deviceTabletopRotations, can not tell tabletop mode in WMShell",
+      "level": "ERROR",
+      "group": "WM_SHELL_FOLDABLE",
+      "at": "com\/android\/wm\/shell\/common\/TabletopModeController.java"
+    },
+    "1960014443": {
+      "message": "processAdaptiveIcon: choose fg icon",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_STARTING_WINDOW",
+      "at": "com\/android\/wm\/shell\/startingsurface\/SplashscreenContentDrawer.java"
+    },
+    "1960718840": {
+      "message": "%s: gravity: %s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipBoundsAlgorithm.java"
+    },
+    "1988667565": {
+      "message": "Adding init callback for %s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_INIT",
+      "at": "com\/android\/wm\/shell\/sysui\/ShellInit.java"
+    },
+    "1990759023": {
+      "message": "addListenerForType types=%s listener=%s",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TASK_ORG",
+      "at": "com\/android\/wm\/shell\/ShellTaskOrganizer.java"
+    },
+    "2010866566": {
+      "message": "%s: Destination bounds were changed during animation",
+      "level": "WARN",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTransition.java"
+    },
+    "2026968528": {
+      "message": "Removing active freeform task: #%d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_DESKTOP_MODE",
+      "at": "com\/android\/wm\/shell\/freeform\/FreeformTaskListener.java"
+    },
+    "2043633764": {
+      "message": "%s: Failed to register pinned stack listener, %s",
+      "level": "ERROR",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/phone\/PipController.java"
+    },
+    "2054709849": {
+      "message": "  pausing opening %staskId=%d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENTS_TRANSITION",
+      "at": "com\/android\/wm\/shell\/recents\/RecentsTransitionHandler.java"
+    },
+    "2057038970": {
+      "message": "Display changed: %d",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_DRAG_AND_DROP",
+      "at": "com\/android\/wm\/shell\/draganddrop\/DragAndDropController.java"
+    },
+    "2074091488": {
+      "message": "stopSwipePipToHome: %s, state=%s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTaskOrganizer.java"
+    },
+    "2076292245": {
+      "message": "%s: hideAllUserControls()",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipMenuView.java"
+    },
+    "2088927117": {
+      "message": "%s: Pinned task is gone.",
+      "level": "WARN",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipController.java"
+    },
+    "2089901900": {
+      "message": "%s: showUserActions: %b",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipMenuView.java"
+    },
+    "2096035537": {
+      "message": "addHandler: Remote",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/Transitions.java"
+    },
+    "2102498210": {
+      "message": "%s: There is no existing PiP Task for TRANSIT_EXIT_PIP",
+      "level": "WARN",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/PipTransition.java"
+    },
+    "2108850553": {
+      "message": "%s: grantWindowFocus(%b)",
+      "level": "DEBUG",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipMenuController.java"
+    },
+    "2122319845": {
+      "message": "[%d] RecentsController.merge",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_RECENTS_TRANSITION",
+      "at": "com\/android\/wm\/shell\/recents\/RecentsTransitionHandler.java"
+    },
+    "2124597812": {
+      "message": " Animating a mixed transition for entering PIP while Split-Screen is foreground.",
+      "level": "VERBOSE",
+      "group": "WM_SHELL_TRANSITIONS",
+      "at": "com\/android\/wm\/shell\/transition\/DefaultMixedHandler.java"
+    },
+    "2127023102": {
+      "message": "%s: closeDrawer()",
+      "level": "INFO",
+      "group": "WM_SHELL_PICTURE_IN_PICTURE",
+      "at": "com\/android\/wm\/shell\/pip\/tv\/TvPipMenuEduTextDrawer.java"
+    },
+    "2142828447": {
+      "message": "Back animation enabled=%s",
+      "level": "DEBUG",
+      "group": "WM_SHELL_BACK_PREVIEW",
+      "at": "com\/android\/wm\/shell\/back\/BackAnimationController.java"
+    }
+  },
+  "groups": {
+    "WM_SHELL_BACK_PREVIEW": {
+      "tag": "ShellBackPreview"
+    },
+    "WM_SHELL_DESKTOP_MODE": {
+      "tag": "WindowManagerShell"
+    },
+    "WM_SHELL_DRAG_AND_DROP": {
+      "tag": "WindowManagerShell"
+    },
+    "WM_SHELL_FOLDABLE": {
+      "tag": "WindowManagerShell"
+    },
+    "WM_SHELL_INIT": {
+      "tag": "WindowManagerShell"
+    },
+    "WM_SHELL_PICTURE_IN_PICTURE": {
+      "tag": "WindowManagerShell"
+    },
+    "WM_SHELL_RECENTS_TRANSITION": {
+      "tag": "ShellRecents"
+    },
+    "WM_SHELL_RECENT_TASKS": {
+      "tag": "WindowManagerShell"
+    },
+    "WM_SHELL_SPLIT_SCREEN": {
+      "tag": "ShellSplitScreen"
+    },
+    "WM_SHELL_STARTING_WINDOW": {
+      "tag": "ShellStartingWindow"
+    },
+    "WM_SHELL_SYSUI_EVENTS": {
+      "tag": "WindowManagerShell"
+    },
+    "WM_SHELL_TASK_ORG": {
+      "tag": "WindowManagerShell"
+    },
+    "WM_SHELL_TRANSITIONS": {
+      "tag": "WindowManagerShell"
+    }
+  }
+}
