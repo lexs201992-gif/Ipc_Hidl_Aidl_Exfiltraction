@@ -1,0 +1,8 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/spreadtrum/ims/RILRequest;->mSerial:I,vendor/sprd/modules/imsservice/src/com/spreadtrum/ims/RILRequest.java,38,5,38,25,
+Lcom/spreadtrum/ims/RILRequest;->mRequest:I,vendor/sprd/modules/imsservice/src/com/spreadtrum/ims/RILRequest.java,40,5,40,25,
+Lcom/spreadtrum/ims/RILRequest;->mResult:Landroid/os/Message;,vendor/sprd/modules/imsservice/src/com/spreadtrum/ims/RILRequest.java,42,5,42,25,
+Lcom/spreadtrum/ims/RILRequest;->obtain(ILandroid/os/Message;)Lcom/spreadtrum/ims/RILRequest;,vendor/sprd/modules/imsservice/src/com/spreadtrum/ims/RILRequest.java,70,5,70,25,
+Lcom/spreadtrum/ims/RILRequest;->release()V,vendor/sprd/modules/imsservice/src/com/spreadtrum/ims/RILRequest.java,153,5,153,25,
+Lcom/spreadtrum/ims/RILRequest;->serialString()Ljava/lang/String;,vendor/sprd/modules/imsservice/src/com/spreadtrum/ims/RILRequest.java,181,5,181,25,
+Lcom/spreadtrum/ims/RILRequest;->onError(ILjava/lang/Object;)V,vendor/sprd/modules/imsservice/src/com/spreadtrum/ims/RILRequest.java,202,5,202,25,
