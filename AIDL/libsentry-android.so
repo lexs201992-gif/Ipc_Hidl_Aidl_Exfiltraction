@@ -1,0 +1,246 @@
+td0$
+Android
+r23b
+7779620
+0@H 
+__cxa_atexit
+__cxa_finalize
+Java_io_sentry_android_ndk_NativeModuleListLoader_nativeClearModuleList
+Java_io_sentry_android_ndk_NativeModuleListLoader_nativeLoadModuleList
+Java_io_sentry_android_ndk_NativeScope_nativeAddBreadcrumb
+Java_io_sentry_android_ndk_NativeScope_nativeRemoveExtra
+Java_io_sentry_android_ndk_NativeScope_nativeRemoveTag
+Java_io_sentry_android_ndk_NativeScope_nativeRemoveUser
+Java_io_sentry_android_ndk_NativeScope_nativeSetExtra
+Java_io_sentry_android_ndk_NativeScope_nativeSetTag
+Java_io_sentry_android_ndk_NativeScope_nativeSetUser
+Java_io_sentry_android_ndk_SentryNdk_initSentryNative
+Java_io_sentry_android_ndk_SentryNdk_shutdown
+__stack_chk_fail
+__stack_chk_guard
+sentry_add_breadcrumb
+sentry_clear_modulecache
+sentry_close
+sentry_envelope_free
+sentry_envelope_write_to_file
+sentry_free
+sentry_get_modules_list
+sentry_init
+sentry_malloc
+sentry_options_free
+sentry_options_new
+sentry_options_set_auto_session_tracking
+sentry_options_set_database_path
+sentry_options_set_debug
+sentry_options_set_dist
+sentry_options_set_dsn
+sentry_options_set_environment
+sentry_options_set_max_breadcrumbs
+sentry_options_set_release
+sentry_options_set_transport
+sentry_remove_extra
+sentry_remove_tag
+sentry_remove_user
+sentry_set_extra
+sentry_set_tag
+sentry_set_user
+sentry_transport_free
+sentry_transport_new
+sentry_transport_set_free_func
+sentry_transport_set_state
+sentry_uuid_as_string
+sentry_uuid_new_v4
+sentry_value_as_int32
+sentry_value_as_string
+sentry_value_decref
+sentry_value_get_by_index
+sentry_value_get_by_key
+sentry_value_get_length
+sentry_value_get_type
+sentry_value_is_null
+sentry_value_new_breadcrumb
+sentry_value_new_object
+sentry_value_new_string
+sentry_value_set_by_key
+snprintf
+strlen
+strncpy
+strrchr
+libc.so
+LIBC
+libsentry.so
+libm.so
+libdl.so
+libsentry-android.so
+getDsn
+debug_id
+getOutboxPath
+setImageSize
+image_size
+(Ljava/lang/String;)V
+code_file
+ip_address
+getDist
+getRelease
+getEnvironment
+(J)V
+()Ljava/lang/String;
+<init>
+username
+isDebug
+getMaxBreadcrumbs
+debug_file
+timestamp
+setImageAddr
+setDebugFile
+email
+level
+.sentry-native
+setType
+%s/%s
+data
+setCodeId
+image_addr
+category
+code_id
+setCodeFile
+io/sentry/protocol/DebugImage
+setDebugId
+type
+F(hAF
+F F1F
+(hIF"F
+G(hAF2F
+(h!F2F
+2(F]
+F(hAF
+FhF1F
+(hIF"F
+G(hAF2F
+(h!F2F
+2(F]
+ h1F
+ h1FJF
+ hAF
+ hAF*F
+ hIF
+ hIF2F
+ hAF
+ hAF2F
+ h1F
+ hIF
+)FZF
+ h1FZF
+ hIF*F
+ hAF
+ hAF*F
+ hQF
+ hQF*F
+ hIF
+ hIF*F
+ hAF
+#}D*F
+ hAF2F
+zD|D(F#F
+F(h}J1F#F
+zD(F
+1F(hyJ
+zDxK(F{D
+F(h1F#F
+(FsJzD
+1F(h#F
+(FoJzD
+1F(h#F
+(FkJzD
+1F(h
+@(FhJhKzD{D
+F(h1F
+!VFO
+(h1FJF
+(h1F"F
+(F1FBF
+FNHxD
+JHxD
+XF1F
+!FJF
+XFAF
+(F1F
+FXF!F
+(F1F
+FXF!F
+(F1F
+FXF!F
+(F1F
+FXF!F
+F hIF
+ hIF
+F hIF
+F hIF
+tS F
+& hIF
+	 FIF
+J!FSF
+@F1F
+h(h 
+iyD F
+F hYF*F
+)F h
+`zD{D F
+)F h
+KzD{D
+)F hCF
+)F h
+KzD{D
+)F hCF
+)F hCF
+)F hCF
+)F hCF
+ hRF
+G hIF
+IF+F
+G h)F
+ FIF
+#uHxD
+IF+F
+G h)F
+#cHxD
+IF+F
+G h)F
+#RHxD
+IF+F
+G h)F
+#@HxD
+IF+F
+G h)F
+#/HxD
+IF+F
+G h)F
+D`G@
+D`G@
+D`G@
+D`G@
+Android (7714059, based on r416183c1) clang version 12.0.8 (https://android.googlesource.com/toolchain/llvm-project c935d99d7cf2016289302412d708641d52d2f7ee)
+Linker: LLD 12.0.8 (/buildbot/src/android/llvm-r416183/out/llvm-project/lld c935d99d7cf2016289302412d708641d52d2f7ee)
+aeabi
+C2.09
+.fini_array
+.ARM.exidx
+.text
+.got
+.comment
+.note.android.ident
+.got.plt
+.rel.plt
+.ARM.attributes
+.dynstr
+.gnu.version_r
+.data.rel.ro
+.rel.dyn
+.gnu.version
+.dynsym
+.gnu.hash
+.note.gnu.build-id
+.dynamic
+.ARM.extab
+.shstrtab
+.rodata
