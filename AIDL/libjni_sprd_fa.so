@@ -1,0 +1,308 @@
+__cxa_finalize
+__cxa_atexit
+_ZN2fa19Affine_getMapMatrixEPNS_9AffineMatENS_5PointES2_ii
+_ZN2fa19Affine_invMapMatrixEPKNS_9AffineMatEPS0_
+_ZN2fa21Affine_transformImageEPKNS_7Image_tEPS0_PKNS_9AffineMatEi
+_ZN2fa24Affine_transformShapeVecEPKNS_5Mat_tEPS0_PKNS_9AffineMatE
+_ZN2fa27Affine_invTransformShapeVecEPKNS_5Mat_tEPS0_PKNS_9AffineMatE
+_ZN2fa6cosfixEi
+_ZN2fa6sinfixEi
+__stack_chk_fail
+__stack_chk_guard
+_ZN2fa10Mat_createEPNS_8MemblockEPPNS_5Mat_tEiii
+_ZN2fa10Vector_addEPNS_5Mat_tEPKS0_
+_ZN2fa10getEyeLeftEPK8FA_SHAPE
+_ZN2fa10svmPredictEPNS_8MemblockEPKNS_8SvmModelEPNS_7Mat16_tEPi
+_ZN2fa11Mat_releaseEPNS_8MemblockEPPNS_5Mat_tE
+_ZN2fa11faceRegressEPNS_14RegressContextE
+_ZN2fa11getEyeRightEPK8FA_SHAPE
+_ZN2fa12Image_createEPNS_8MemblockEPPNS_7Image_tEiii
+_ZN2fa12Vector_roundEPNS_5Mat_tE
+_ZN2fa12getEyeCenterEPK8FA_SHAPE
+_ZN2fa13Image_releaseEPNS_8MemblockEPPNS_7Image_tE
+_ZN2fa13Memblock_initEPNS_8MemblockE
+_ZN2fa14getMouthCenterEPK8FA_SHAPE
+_ZN2fa14initTrackShapeEPNS_14RegressContextEPK8FA_SHAPEPNS_9AffineMatEiiPS2_
+_ZN2fa14mirrorLandmarkEiPNS_5Mat_tE
+_ZN2fa15FeatureVec_calcEPKNS_12FeatureImageEPKNS_5Mat_tEPs
+_ZN2fa15Memblock_createEPNS_8MemblockEm
+_ZN2fa15Vector16_createEPNS_8MemblockEPPNS_7Mat16_tEii
+_ZN2fa16Memblock_releaseEPNS_8MemblockE
+_ZN2fa16Vector16_releaseEPNS_8MemblockEPPNS_7Mat16_tE
+_ZN2fa16cropAffinedImageEPNS_8MemblockEPKNS_7Image_tEPNS_9AffineMatEPPS2_i
+_ZN2fa16faceAlign_CreateEPPNS_13AlignDetectorE
+_ZN2fa16getAddMemorySizeEv
+_ZN2fa16getModelforTrackEPNS_13AlignDetectorEPK8FA_SHAPEPiS5_
+_ZN2fa16getShapeDistanceEPNS_8MemblockEPK8FA_SHAPEPKNS_7Mat16_tEPi
+_ZN2fa17FeatureVec_getDimEv
+_ZN2fa17faceAlign_ReleaseEPPNS_13AlignDetectorE
+_ZN2fa18getFrontalAsmModelEv
+_ZN2fa18getFrontalSvmModelEv
+_ZN2fa19FeatureImage_createEPNS_8MemblockEPPNS_12FeatureImageEPKNS_7Image_tE
+_ZN2fa19Vector_add_Vector16EPNS_5Mat_tEPKNS_7Mat16_tE
+_ZN2fa20FeatureImage_releaseEPNS_8MemblockEPPNS_12FeatureImageE
+_ZN2fa20Mat16_multiplyVectorEPKNS_7Mat16_tEPKNS_5Mat_tEPS3_
+_ZN2fa20getFrontalTrackModelEv
+_ZN2fa21getFrontalDetectModelEv
+_ZN2fa22getHalfprofileAsmModelEv
+_ZN2fa22getHalfprofileSvmModelEv
+_ZN2fa24Vector_subtract_Vector16EPNS_5Mat_tEPKNS_7Mat16_tE
+_ZN2fa24getAsmEigNumForTrackInitEv
+_ZN2fa24getHalfprofileTrackModelEv
+_ZN2fa25Mat16trans_multiplyVectorEPKNS_7Mat16_tEPKNS_5Mat_tEPS3_
+_ZN2fa25getHalfprofileDetectModelEv
+_ZN2fa28SparseMat16_multiplyVector16EPKNS_13SparseMat16_tEPKNS_7Mat16_tEPNS_5Mat_tE
+_ZN2fa28transShapeVecToOriginalImageEPNS_5Mat_tEPNS_9AffineMatEii
+_ZN2fa7faErrorEiPKcS1_S1_i
+_ZN2fa7sqrtfixEj
+_ZN2fa9faceAlignEPNS_13AlignDetectorEPK8FA_IMAGEPK11FA_FACEINFOP8FA_SHAPE
+_ZN2fa9faceTrackEPNS_13AlignDetectorEPK8FA_IMAGEPK8FA_SHAPEPS5_
+calloc
+free
+memset
+FaCreateAlignHandle
+FaDeleteAlignHandle
+FaFaceAlign
+FaFaceTrack
+FaGetVersion
+FaSolvePose
+_ZN2fa9solvePoseEPNS_13AlignDetectorEP8FA_SHAPEP7FA_POSE
+_ZN2fa16reversePointListEPiii
+__android_log_print
+_ZN2fa10roundFix32Eii
+_ZN2fa20calcGradientIntegralEPKNS_7Image_tEPPS0_
+_ZN2fa6mbFreeEPNS_8MemblockEPPv
+_ZN2fa8mbMallocEPNS_8MemblockEPPvmi
+memcpy
+_ZN2fa10sloveAngleEPfP7FA_POSE
+_ZN2fa11compute_rhoEPNS_12FA_EPNP_PARAEPf
+_ZN2fa11solveLinearEPNS_8MemblockEPKfiiS3_iPf
+_ZN2fa12gauss_newtonEPNS_8MemblockEPKfS3_Pf
+_ZN2fa13getImagePointEPK8FA_SHAPEPf
+_ZN2fa13mulTransposedEPKfPfii
+_ZN2fa14compute_L_6x10EPNS_8MemblockEPKfPf
+_ZN2fa15compute_R_and_tEPNS_12FA_EPNP_PARAEPKfS3_PfS4_
+_ZN2fa15compute_ccs_pcsEPNS_12FA_EPNP_PARAEPKfS3_
+_ZN2fa15setInternalParaEPKfPf
+_ZN2fa16estimate_R_and_tEPNS_12FA_EPNP_PARAEPfS2_
+_ZN2fa18reprojection_errorEPNS_12FA_EPNP_PARAEPKfS3_
+_ZN2fa19find_betas_approx_1EPNS_8MemblockEPKfS3_Pf
+_ZN2fa19find_betas_approx_2EPNS_8MemblockEPKfS3_Pf
+_ZN2fa19find_betas_approx_3EPNS_8MemblockEPKfS3_Pf
+_ZN2fa21choose_control_pointsEPNS_12FA_EPNP_PARAE
+_ZN2fa28compute_A_and_b_gauss_newtonEPKfS1_PfS2_S2_
+_ZN2fa31compute_barycentric_coordinatesEPNS_12FA_EPNP_PARAE
+_ZN2fa3dotEPKfS1_
+_ZN2fa3svdEPKfPfS2_S2_ii
+_ZN2fa4swapEPfS0_
+_ZN2fa5dist2EPKfS1_
+_ZN2fa5hypotEff
+_ZN2fa6fill_MEPNS_12FA_EPNP_PARAEPf
+_ZN2fa8qr_solveEPfiiS0_S0_
+_ZN2fa8solvePNPEPNS_13AlignDetectorEPKfS3_S3_iPf
+_ZN2fa9matInvertEPNS_8MemblockEPKfPfi
+_ZdaPv
+_Znam
+asinf
+atan2
+liblog.so
+libstdc++.so
+libc.so
+libm.so
+libdl.so
+_edata
+__bss_start
+__bss_start__
+__bss_end__
+__end__
+_end
+libjni_sprd_fa.so
+LIBC
+Ai(}
+(BiI}	
+0AiI}	
+M8@)O
+2F@)L
+B@)J!
+BJ@iC|
+)->@)
+	y;x
+	y;x
+T?	@q
+K(!	
+K)}	
+#4)*
+	1X)
+-V)	1
+1[)	-Y)
+,A)H
+,C)H
+,F)H
+,A)H
+0B)i
+S5}~
+b ".
+ '.BT
+"%.$"$.b
+BdaN
+Xiu8{
+QJ}@
+yOkn
+yojn
+Q?!@q
+NcHa
+CHaN
+(Ih8
+S)Q'
+(Ih8L
+S)Q'
+(Ih8
+S)Q'
+(Ih8
+S)Q'
+(Ih8
+S)Q'
+(Ih8
+S)Q'
+(Ih8
+S)Q'
+(Ih8
+S)Q'
+(Ih8
+S)Q'
+(Ih8
+S)Q'
+(Ih8
+S)Q'
+(Ih8
+	K?i
+	K?i
+xByo
+yCyp
+_8! 
+%jb8
+K!E@
+*yu}
+Tc8$
+4N{#
+"N"@
+K"F@
+*!|~
+T?C'
+N%zc
+TbD@
+5Byi
+!^ 0
+!^ 4
+QB(#
+A-B8$
+Q!8#
+C-!8#
+	@-C
+A-G)@
+	@-C
+A-G-@
+5 	@
+Tjy~
+B-G@@-1HC-3 @
+tUA-v]@-X
+@MQ	
+Q ( 
+TA@!
+@-b	@
+I-d	@
+I-bQ@
+R-d	@
+R-dQ@
+B-A8!
+C-A8!
+A-'A_
+~-RLA-y
+kBh"
+5H  
+*#jf
+Nchx
+T"yj
+Q!ij
+!N"@
+K"F@
+	@-@ !
+N @!
+C-	@b
+!^D0
+-H @
+N @!
+C-	@b
+getShapeDistance
+Inner function failed.
+D:/xin.guo/fddetect_svn/trunk/src/face_alignment/fadetect/build/android/jni/../../../libfacealign/src/facealign.cpp
+getModelforTrack
+cropAffinedImage
+svmPredict
+faceAlign_Create
+NULL handle
+Out of memory.
+initTrackShape
+faceRegress
+faceAlign
+NULL inputs
+Bad input image
+faceTrack
+checkImage
+Assertion: i_image->width >= 64 && i_image->height >= 64 failed
+Assertion: i_image->width <= 8192 && i_image->height <= 8192 failed
+Assertion: i_image->width <= i_image->step failed
+Assertion: i_image->data != NULL failed
+cropFaceImage
+cropFaceImageTrack
+1, 7, 6, 26
+libfacealign
+ERROR: code=%d (%s)
+	in function %s, %s(%d)
+no description
+<unknown>
+FeatureImage_create
+D:/xin.guo/fddetect_svn/trunk/src/face_alignment/fadetect/build/android/jni/../../../libfacealign/src/fafeature.cpp
+ #'*-02579;=@ACEGIKLNPQSTVWYZ[]^`abcefghjklmnpqrstuvwxyz{|}~
+Assertion: i_width > 0 && i_height > 0 failed
+D:/xin.guo/fddetect_svn/trunk/src/face_alignment/fadetect/build/android/jni/../../../libfacealign/src/faimfunc.cpp
+Assertion: i_step >= i_width failed
+Vector16_create
+Assertion: i_cols > 0 && i_Q >= 0 failed
+D:/xin.guo/fddetect_svn/trunk/src/face_alignment/fadetect/build/android/jni/../../../libfacealign/src/famatfunc.cpp
+Mat_create
+Assertion: i_rows > 0 && i_cols > 0 && i_Q >= 0 failed
+Memblock_create
+D:/xin.guo/fddetect_svn/trunk/src/face_alignment/fadetect/build/android/jni/../../../libfacealign/src/famemblock.cpp
+mbMalloc
+Space not enough in memory block
+mbFree
+already freed
+choose_control_points
+D:/xin.guo/fddetect_svn/trunk/src/face_alignment/fadetect/build/android/jni/../../../libfacealign/src/fasolvepose.cpp
+solvePNP
+solvePose
+ff6B
+Bff'
+Bff'
+.init_array
+.fini_array
+.text
+.got
+.rela.plt
+.bss
+.dynstr
+.eh_frame_hdr
+.gnu.version_r
+.rela.dyn
+.gnu.version
+.dynsym
+.hash
+.eh_frame
+.note.gnu.build-id
+.dynamic
+.shstrtab
+.rodata
+.gnu_debugdata
+.data
+7zXZ
