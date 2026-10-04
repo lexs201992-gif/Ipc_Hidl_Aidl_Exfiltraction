@@ -1,0 +1,502 @@
+__cxa_finalize
+__cxa_atexit
+Classifier_calcMemSize
+Classifier_create
+Classifier_setImage
+__stack_chk_fail
+__stack_chk_guard
+fdError
+getDefaultModels
+mbMalloc
+memset
+Detector_clearFace
+Detector_create
+Detector_detectFace
+Detector_detectFaceExt
+Detector_detectMultiScale
+Detector_getFaceCount
+Detector_getFaceInfo
+Detector_multiThread
+Detector_release
+Detector_singleThread
+Detector_threadFunc
+FaceArray_addFace
+FaceArray_calcMemSize
+FaceArray_clear
+FaceArray_create
+FaceArray_getCount
+FaceArray_getFace
+FaceArray_merge
+FaceArray_postProcess
+FeatureImage_create
+FeatureImage_release
+ImagePyramid_create
+ImagePyramid_release
+Memblock_create
+Memblock_init
+Memblock_release
+Tracker_create
+Tracker_release
+Tracker_run
+buildDetectThreadParams
+calloc
+decidePadding
+estimateFaceArrayCapacity
+free
+getDirectionByRoll
+getScaleFactorImgPyr
+memcpy
+threadpool_create
+threadpool_destory
+threadpool_schedule_task
+threadpool_wait_all_tasks_done
+FaceArray_addComp
+FaceArray_cleanup
+FaceArray_copy
+FaceArray_mergeFaceComp
+FaceArray_resolveOverlaps
+FaceArray_sortBySize
+qsort
+FdClearFace
+FdCreateDetector
+FdDeleteDetector
+FdDetectFace
+FdDetectFaceExt
+FdGetFaceCount
+FdGetFaceInfo
+FdGetVersion
+FdInitOption
+Image_assign
+__sF
+fprintf
+Image_copy
+Image_fillMargin
+Image_getSubRect
+calcUniformLbpImage
+mbFree
+Image_halfSize
+Image_resize
+Memblock_clear
+FA_FaCreateAlignHandle
+FA_FaDeleteAlignHandle
+FA_FaFaceAlign
+Tracker_searchNewFace
+malloc
+pthread_cond_broadcast
+pthread_cond_destroy
+pthread_cond_init
+pthread_cond_signal
+pthread_cond_wait
+pthread_create
+pthread_exit
+pthread_join
+pthread_mutex_destroy
+pthread_mutex_init
+pthread_mutex_lock
+pthread_mutex_unlock
+_ZN2fd19Affine_getMapMatrixEPNS_9AffineMatENS_5PointES2_ii
+_ZN2fd19Affine_invMapMatrixEPKNS_9AffineMatEPS0_
+_ZN2fd21Affine_transformImageEPKNS_7Image_tEPS0_PKNS_9AffineMatEi
+_ZN2fd24Affine_transformShapeVecEPKNS_5Mat_tEPS0_PKNS_9AffineMatE
+_ZN2fd27Affine_invTransformShapeVecEPKNS_5Mat_tEPS0_PKNS_9AffineMatE
+_ZN2fd6cosfixEi
+_ZN2fd6sinfixEi
+_ZN2fd10Mat_createEPNS_8MemblockEPPNS_5Mat_tEiii
+_ZN2fd10Vector_addEPNS_5Mat_tEPKS0_
+_ZN2fd10getEyeLeftEPK8FA_SHAPE
+_ZN2fd10svmPredictEPNS_8MemblockEPKNS_8SvmModelEPNS_7Mat16_tEPi
+_ZN2fd11Mat_releaseEPNS_8MemblockEPPNS_5Mat_tE
+_ZN2fd11faceRegressEPNS_13DetectContextE
+_ZN2fd11getEyeRightEPK8FA_SHAPE
+_ZN2fd12Image_createEPNS_8MemblockEPPNS_7Image_tEiii
+_ZN2fd12Vector_roundEPNS_5Mat_tE
+_ZN2fd12getEyeCenterEPK8FA_SHAPE
+_ZN2fd13Image_releaseEPNS_8MemblockEPPNS_7Image_tE
+_ZN2fd13Memblock_initEPNS_8MemblockE
+_ZN2fd14getMouthCenterEPK8FA_SHAPE
+_ZN2fd14initTrackShapeEPNS_13DetectContextEPK8FA_SHAPEPS2_
+_ZN2fd14mirrorLandmarkEiPNS_5Mat_tE
+_ZN2fd15FeatureVec_calcEPKNS_12FeatureImageEPKNS_5Mat_tEPs
+_ZN2fd15Memblock_createEPNS_8MemblockEm
+_ZN2fd15Vector16_createEPNS_8MemblockEPPNS_7Mat16_tEii
+_ZN2fd16Memblock_releaseEPNS_8MemblockE
+_ZN2fd16Vector16_releaseEPNS_8MemblockEPPNS_7Mat16_tE
+_ZN2fd16cropAffinedImageEPNS_8MemblockEPKNS_7Image_tEPNS_9AffineMatEPPS2_i
+_ZN2fd16faceAlign_CreateEPPNS_13AlignDetectorE
+_ZN2fd16getModelforTrackEPNS_13AlignDetectorEPK8FA_SHAPEPiS5_
+_ZN2fd16getShapeDistanceEPNS_8MemblockEPK8FA_SHAPEPKNS_7Mat16_tEPi
+_ZN2fd17FeatureVec_getDimEv
+_ZN2fd17faceAlign_ReleaseEPPNS_13AlignDetectorE
+_ZN2fd18getFrontalAsmModelEv
+_ZN2fd18getFrontalSvmModelEv
+_ZN2fd19FeatureImage_createEPNS_8MemblockEPPNS_12FeatureImageEPKNS_7Image_tE
+_ZN2fd19Vector_add_Vector16EPNS_5Mat_tEPKNS_7Mat16_tE
+_ZN2fd20FeatureImage_releaseEPNS_8MemblockEPPNS_12FeatureImageE
+_ZN2fd20Mat16_multiplyVectorEPKNS_7Mat16_tEPKNS_5Mat_tEPS3_
+_ZN2fd20getFrontalTrackModelEv
+_ZN2fd21getFrontalDetectModelEv
+_ZN2fd22getHalfprofileAsmModelEv
+_ZN2fd22getHalfprofileSvmModelEv
+_ZN2fd24Vector_subtract_Vector16EPNS_5Mat_tEPKNS_7Mat16_tE
+_ZN2fd24getAsmEigNumForTrackInitEv
+_ZN2fd24getHalfprofileTrackModelEv
+_ZN2fd25Mat16trans_multiplyVectorEPKNS_7Mat16_tEPKNS_5Mat_tEPS3_
+_ZN2fd25getHalfprofileDetectModelEv
+_ZN2fd28SparseMat16_multiplyVector16EPKNS_13SparseMat16_tEPKNS_7Mat16_tEPNS_5Mat_tE
+_ZN2fd7faErrorEiPKcS1_S1_i
+_ZN2fd7sqrtfixEj
+_ZN2fd9faceAlignEPNS_13AlignDetectorEPK8FA_IMAGEPK11FA_FACEINFOP8FA_SHAPE
+_ZN2fd9faceTrackEPNS_13AlignDetectorEPK8FA_IMAGEPK8FA_SHAPEPS5_
+FA_FaFaceTrack
+FA_FaGetVersion
+_ZN2fd16reversePointListEPiii
+__android_log_print
+_ZN2fd10roundFix32Eii
+_ZN2fd20calcGradientIntegralEPKNS_7Image_tEPPS0_
+_ZN2fd6mbFreeEPNS_8MemblockEPPv
+_ZN2fd8mbMallocEPNS_8MemblockEPPvmi
+liblog.so
+libstdc++.so
+libc.so
+libm.so
+libdl.so
+_edata
+__bss_start
+__bss_start__
+__bss_end__
+__end__
+_end
+libjni_sprd_fd.so
+LIBC
+2-Z*
+l}@y,!
+Cx)a
+m!@y
+To	@
+	!A)_|
+5h&@
+4I A)
+	*J}
+*1D)+%E)M}
+q)iz8Jiz8kiz8H
+Tx&A
+jz81jz8
+iq8Pj
+*o}@
+1j|8Rj|8
+j|81j|8
+Rj|8
+3V)I
+K-1@)
+C)aB
+T`b	
+RJ}	
+4`.A
+*A)k
+Th*@
+O	1@
+	(B)+0F)
+RkB@
+TkB@
+E)0DD)2(@
+T($@
+?	@q
+T( @
+T((@
+T(,@
+T(0@
+T(8@
+T)4@
+T(@@
+T(D@
+T(H@
+T?	@q
+<160nR60n7h
+<s60n1
+!NXh
+60nQ
+60n1
+60n1
+60n1
+70n1
+whg8
+jg8;jg8
+kZjg88
+hg88
+k:hg88
+k[hg8
+<!t"nbt$nA
+/1pbn!pb.
+pf.fpdncpd.
+pp.!
+O!(!
+(!N!@
+kc8cic8R
+Qj~@
+QT}@
+_i48_
+$.!$
+o!(!
+TLq|
+".ej
+#.Fh
+jj84jj86hj8
+@9Xhj8
+{hj8
+|jj8
+h*8J
+,A),
+<!( nAh n!$
+o!(!
+	kj	
+is86hs8s
+K	}@
+3k)8
+*Py)
+3hr8rxi
+!hd8_
+4ocHa.
+HancH!.#j$
+fhexEhex
+S%j$8
+j&D)_
+r+}@
+*J}@
+*i}@
+T`*A
+?R)I
+;O)J
+3P)k
+l7D)
+E?)=
+	?)k
+N	)E
+8E)(
+Ai(}
+(BiI}	
+0AiI}	
+M8@)O
+2F@)L
+= 	@
+/A@)QI@) 
+BJ@iC|
+),>@)
+	y:x
+T		@
+T?	@q
+K(!	
+K)}	
+5	)@)
+1C)	)
+)	5A)
+)	)F)
+1E)	)
+,A)H
+,C)H
+,F)H
+,A)H
+0B)i
+S5}~
+b ".
+ '.BT
+"%.$"$.b
+BdaN
+Xiu8{
+QJ}@
+yOkn
+yojn
+Q?!@q
+NcHa
+CHaN
+(Ih8
+(Ih8L
+(Ih8
+(Ih8
+(Ih8
+(Ih8
+(Ih8
+(Ih8
+(Ih8
+(Ih8
+(Ih8
+(Ih8
+	K?i
+	K?i
+xByo
+yCyp
+_8! 
+%jb8
+Inner function failed.
+D:/xin.guo/fddetect_svn/trunk/src/face_detection/fddetect_sw/build/android/jni/../../../libfacedetect/src/classifier.c
+D:/xin.guo/fddetect_svn/trunk/src/face_detection/fddetect_sw/build/android/jni/../../../libfacedetect/src/detector.c
+error in thread.
+Out of memory.
+D:/xin.guo/fddetect_svn/trunk/src/face_detection/fddetect_sw/build/android/jni/../../../libfacedetect/src/facearray.c
+Assertion: i_faceIndex >= 0 && i_faceIndex < i_faceArray->count failed
+1, 7, 7, 13
+Assertion: hDT != NULL failed
+D:/xin.guo/fddetect_svn/trunk/src/face_detection/fddetect_sw/build/android/jni/../../../libfacedetect/src/sprdfdapi.c
+Assertion: option != NULL failed
+Assertion: hDT != NULL && grayImage != NULL failed
+Assertion: i_opt->workMode == FD_WORKMODE_STILL || i_opt->workMode == FD_WORKMODE_MOVIE failed
+Assertion: i_opt->threadNum > 0 && i_opt->threadNum <= C_MAX_THREAD_NUM failed
+Assertion: i_opt->maxFaceNum > 0 && i_opt->maxFaceNum <= 1024 failed
+Assertion: i_opt->detectDensity >= 3 && i_opt->detectDensity < 10 failed
+Assertion: i_opt->minFaceSize >= 20 && i_opt->maxFaceSize <= 8192 failed
+Assertion: i_opt->minFaceSize <= i_opt->maxFaceSize failed
+Assertion: i_opt->directions > 0 && i_opt->directions <= FD_DIRECTION_ALL failed
+Assertion: i_opt->angleFrontal >= FD_ANGLE_NONE && i_opt->angleFrontal <= FD_ANGLE_RANGE_90 failed
+Assertion: i_opt->angleHalfProfile >= FD_ANGLE_NONE && i_opt->angleHalfProfile <= FD_ANGLE_RANGE_90 failed
+Assertion: i_opt->angleFullProfile >= FD_ANGLE_NONE && i_opt->angleFullProfile <= FD_ANGLE_RANGE_90 failed
+Assertion: i_opt->scoreThreshold >= 0 && i_opt->scoreThreshold <= 1000 failed
+Assertion: i_opt->detectInterval >= 0 && i_opt->detectInterval <= 50 failed
+Assertion: i_opt->trackDensity >= 3 && i_opt->trackDensity <= 10 failed
+Assertion: i_opt->lostHoldCount >= 0 && i_opt->lostHoldCount <= 10 failed
+Assertion: i_opt->lostRetryCount >= 0 && i_opt->lostRetryCount <= 10 failed
+Assertion: i_opt->lostRetryCount >= i_opt->lostHoldCount failed
+Assertion: i_opt->holdPositionRate >= 0 && i_opt->holdPositionRate <= 20 failed
+Assertion: i_opt->holdSizeRate >= 0 && i_opt->holdSizeRate <= 30 failed
+Assertion: i_opt->swapFaceRate >= 0 && i_opt->swapFaceRate <= 300 failed
+Assertion: i_opt->guessFaceDirection == 0 || i_opt->guessFaceDirection == 1 failed
+Assertion: i_image->width >= 64 && i_image->height >= 64 failed
+Assertion: i_image->width <= 8192 && i_image->height <= 8192 failed
+Assertion: i_image->width <= i_image->step failed
+Assertion: i_image->data != NULL failed
+ERROR: code=%d (%s)
+	in function 
+no description
+<unknown>
+Assertion: i_srcImg->height == o_dstImg->height && i_srcImg->width == o_dstImg->width failed
+D:/xin.guo/fddetect_svn/trunk/src/face_detection/fddetect_sw/build/android/jni/../../../libfacedetect/src/feature.c
+Assertion: i_radius > 0 && i_radius <= 2 failed
+:::::::
+:::::::::::::::
+:::::::
+:::::::::::::::::::::::::::::::
+:::::::::::::::
+:::::::
+:::":)0
+:::::::':::::::::::::::/:::::::::::::::::::::::::::::::7
+:::&:::::::.:::::::::::::::6
+:%:::-:::::::5
+$:,:::4#+:3*219Assertion: i_width > 0 && i_height > 0 failed
+D:/xin.guo/fddetect_svn/trunk/src/face_detection/fddetect_sw/build/android/jni/../../../libfacedetect/src/imfunc.c
+Assertion: i_step >= i_width failed
+Assertion: i_subRect.x >= 0 && i_subRect.x + i_subRect.width - 1 < i_srcImg->width failed
+Assertion: i_subRect.y >= 0 && i_subRect.y + i_subRect.height - 1 < i_srcImg->height failed
+Assertion: (i_srcImg->width == o_dstImg->width) && (i_srcImg->height == o_dstImg->height) failed
+Assertion: o_dstImg->width == dstW && o_dstImg->height == dstH failed
+D:/xin.guo/fddetect_svn/trunk/src/face_detection/fddetect_sw/build/android/jni/../../../libfacedetect/src/impyramid.c
+Assertion: i_scaleFactor >= FIX_CAST(1) failed
+D:/xin.guo/fddetect_svn/trunk/src/face_detection/fddetect_sw/build/android/jni/../../../libfacedetect/src/imresize.c
+D:/xin.guo/fddetect_svn/trunk/src/face_detection/fddetect_sw/build/android/jni/../../../libfacedetect/src/memblock.c
+Space not enough in memory block
+already freed
+D:/xin.guo/fddetect_svn/trunk/src/face_detection/fddetect_sw/build/android/jni/../../../libfacedetect/src/tracker.c
+Fail to create FA handle.
+getShapeDistance
+D:/xin.guo/fddetect_svn/trunk/src/face_detection/fddetect_sw/build/android/jni/../../../libfacealign/src/facealign.cpp
+getModelforTrack
+cropAffinedImage
+svmPredict
+faceAlign_Create
+NULL handle
+initTrackShape
+faceRegress
+faceAlign
+NULL inputs
+Bad input image
+faceTrack
+checkImage
+cropFaceImage
+cropFaceImageTrack
+1, 7, 6, 26
+libfacealign
+ERROR: code=%d (%s)
+	in function %s, %s(%d)
+FeatureImage_create
+D:/xin.guo/fddetect_svn/trunk/src/face_detection/fddetect_sw/build/android/jni/../../../libfacealign/src/fafeature.cpp
+ #'*-02579;=@ACEGIKLNPQSTVWYZ[]^`abcefghjklmnpqrstuvwxyz{|}~
+D:/xin.guo/fddetect_svn/trunk/src/face_detection/fddetect_sw/build/android/jni/../../../libfacealign/src/faimfunc.cpp
+Vector16_create
+Assertion: i_cols > 0 && i_Q >= 0 failed
+D:/xin.guo/fddetect_svn/trunk/src/face_detection/fddetect_sw/build/android/jni/../../../libfacealign/src/famatfunc.cpp
+Mat_create
+Assertion: i_rows > 0 && i_cols > 0 && i_Q >= 0 failed
+Memblock_create
+D:/xin.guo/fddetect_svn/trunk/src/face_detection/fddetect_sw/build/android/jni/../../../libfacealign/src/famemblock.cpp
+mbMalloc
+mbFree
+Classifier_create
+Classifier_addHidModelOnDir
+HidModel_createFrom
+ !"#$%&'()*+,-./0123456789:
+&%$#"! '-,+*)(/.4321076589:
+&' !"#$%./()*+,-6701234589:
+ '&%$#"!/.-,+*)(6543210789:
+$%&' !"#,-./()*+4567012389:
+"! '&%$#)(/.-,+*0765432189:
+"#$%&' !*+,-./()2345670189:
+$#"! '&%+*)(/.-,2107654389:HidModel_alloc
+Detector_threadFunc
+Detector_multiThread
+Detector_singleThread
+Detector_detectMultiScale
+Detector_create
+Detector_detectFace
+Detector_detectFaceExt
+Detector_detectOneScale
+createSearchMask
+ 0!	#
+	130
++7;6
+B#&$
+FaceArray_create
+FaceArray_getFace
+FdCreateDetector
+FdDetectFace
+FdClearFace
+FdGetFaceInfo
+FdDetectFaceExt
+checkOption
+checkImage
+calcUniformLbpImage
+FeatureImage_create
+Image_create
+Image_getSubRect
+Image_copy
+Image_halfSize
+ImagePyramid_create
+Image_resize
+BufferBL_create
+Memblock_create
+mbMalloc
+mbFree
+Tracker_create
+Tracker_searchNewFace
+Tracker_run
+Tracker_trackFace
+trackByDetectInLocal
+trackByFaceAlignment
+.init_array
+.fini_array
+.text
+.got
+.rela.plt
+.bss
+.dynstr
+.eh_frame_hdr
+.gnu.version_r
+.data.rel.ro
+.rela.dyn
+.gnu.version
+.dynsym
+.hash
+.eh_frame
+.note.gnu.build-id
+.dynamic
+.shstrtab
+.rodata
+.gnu_debugdata
+.data
+7zXZ
