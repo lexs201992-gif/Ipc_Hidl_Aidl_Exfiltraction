@@ -1,0 +1,80 @@
+///////////////////////////////////////////////////////////
+//cartoon 卡通着色函数
+//越大色彩饱和度越好,越小越有非真实感
+//defalut 10
+const float uCartoonQuantize = 10.0;
+//该阈值用于判定当前点是否为边缘点,该阈值越小,勾勒卡通渲染产生的边缘轮廓越粗。当该值逐渐增大时,勾勒出的黑色边缘轮廓越来越不明显,直至消失
+//default 0.3
+const float uCartoonMagTol = 0.3;
+
+vec4 cartoon(in vec2 vTexture) {
+    vec4 result = vec4(1.);
+    // Get texture size.
+    ivec2 ires = textureSize(sTexture0, 0);
+    vec2 size = vec2(float(ires.x), float(ires.y));
+    vec3 rgb = texture(sTexture0, vTexture).rgb;
+    vec2 stp0 = vec2(1.0/size.x, 0.0);
+    vec2 st0p = vec2(0.0, 1.0/size.y);
+    vec2 stpp = vec2(1.0/size.x, 1.0/size.y);
+    vec2 stpm = vec2(1.0/size.x, -1.0/size.y);
+    const vec3 W = vec3(0.2125, 0.7154, 0.0721);
+
+    float im1m1 = dot(texture(sTexture0, vTexture-stpp).rgb, W);
+    float ip1p1 = dot(texture(sTexture0, vTexture+stpp).rgb, W);
+    float im1p1 = dot(texture(sTexture0, vTexture-stpm).rgb, W);
+    float ip1m1 = dot(texture(sTexture0, vTexture+stpm).rgb, W);
+    float im10 = dot(texture(sTexture0, vTexture-stp0).rgb, W);//左边相邻点的灰度值
+    float ip10 = dot(texture(sTexture0, vTexture+stp0).rgb, W);//右边相邻点的灰度值
+    float i0m1 = dot(texture(sTexture0, vTexture-st0p).rgb, W);//上边相邻点的灰度值
+    float i0p1 = dot(texture(sTexture0, vTexture+st0p).rgb, W);//下边相邻的点的灰度值
+    //与图像作平面卷积计算,分别得出横向及纵向的亮度差分近似值,即 Sobel 算子的横纵灰度值
+    float h = -1.0 * im1p1 - 2.0 * i0p1 - 1.0 * ip1p1 + 1.0 * im1m1 + 2.0 * i0m1 + 1.0 * ip1m1;
+    float v = -1.0 * im1m1 - 2.0 * im10 - 1.0 * im1p1 + 1.0 * ip1m1 + 2.0 * ip10 + 1.0 * ip1p1;
+    float mag = length(vec2(h, v));
+    if (mag > uCartoonMagTol){
+        //如果梯度 mag 大于阈值,则认为该点为边缘点,最终颜色为黑色
+        result=vec4(0.0, 0.0, 0.0, 1.0);
+    } else {
+        //不在物体边缘,量化物体的颜色值
+        //将当前片元的颜色值乘以量化值
+        rgb.rgb *= uCartoonQuantize;
+        //卡通化程度
+        rgb.rgb += vec3(0.5, 0.5, 0.5);
+        //转换成整数类型的向量
+        ivec3 intrgb = ivec3(rgb.rgb);
+        rgb.rgb = vec3(intrgb) / uCartoonQuantize;//将整数类型的片元颜色值除以量化值
+        //获得片元的最终颜色值
+        result = vec4(rgb, 1.0);
+    }
+    return result;
+}
+
+
+///////////////////////////////////////////////////////////
+
+const float kernalScale = 0.5;
+//const float kernel[9] = float[9](
+//1., 1., 1.,
+//1., 1., 1.,
+//1., 1., 1.
+//);
+const float kernel[9] = float[9](
+2., 0., 2.,
+0., 0., 0.,
+3., 0., -6.
+);
+const vec2 kernelCoord[9] = vec2[9](
+vec2(-1., -1.), vec2(0., -1.), vec2(1., -1.),
+vec2(-1., 0.), vec2(0., 0.), vec2(1., 0.),
+vec2(-1., 1.), vec2(0., 1.), vec2(1., 1.)
+);
+
+vec4 jiaji(in vec2 vTexture){
+    vec4 result = vec4(1.);
+    ivec2 size = textureSize(sTexture0,0);
+    vec2 uResolution = vec2(float(size.x),float(size.y));
+    for (int i=0;i<9;i++) {
+        result += texture(sTexture0, vTexture.st + kernelCoord[i] / uResolution) * kernel[i];
+    }
+    return vec4(result.rgb * kernalScale, 1.);
+}
